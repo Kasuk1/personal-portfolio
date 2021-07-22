@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+//VARIABLES
+//FONTS
+$main-font: "Heebo", sans-serif;
+$second-font: "Roboto", sans-serif;
+
+//COLORS
+$main-color: #EFEAE2;
+$second-color: #F0663A;
+$third-color: #E18669;
+$fourth-color: #E1BCB0;
+$highlight-background: #F0663A;
+$highlight-color: #E9DCC5;
+$default-black: #000000;
+$second-black: #484848;
+$default-white: #ffffff;
+
+//BASIC-CONFIGURATION
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: $main-font;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $main-color;
+}
+
+#root {
+    max-width: 1640px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    background-color: $fourth-color;
+    color: $default-black;
+}
+
+body::-webkit-scrollbar {
+    display: block;
+    background-color: $fourth-color;
+    width: 5px;
+    overflow: auto;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $third-color;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 35px;
+    margin-bottom: 11px;
+}
+
+p {
+    color: $second-black;
+    font-size: 0.95rem;
+    line-height: 40px;
+}
+
+.text-highlight {
+    display: inline-block;
+    background-color: $highlight-background;
+    color: $highlight-color;
+    padding: 0 4px;
+    line-height: 1.3;
+}

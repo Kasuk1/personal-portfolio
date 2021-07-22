@@ -1,0 +1,32 @@
+@import "../../style.scss";
+
+.contact-text {
+    max-width: 697px;
+    text-align: center;
+    margin-top: 20vmin;
+    font-size: 1.5rem;
+    font-weight:400;
+}
+
+.logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.logos-container a {
+    margin: 10px 25px;
+    transition: all 0.1s ease-in;
+}
+
+.logos-container a:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 480px) {
+    .contact-text {
+        margin-top: 0vmin;
+        font-size: 1rem;
+    }
+}

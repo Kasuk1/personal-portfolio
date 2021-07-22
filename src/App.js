@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+/* Import BASICS */
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
+import "animate.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+/* Import STYLES */
+import "./style.scss"
+
+/* Import VIEWS */
+import Main from "./views/main/main"
+import Project from "./views/project/project";
+import Skill from "./views/skill/skill";
+import AboutMe from "./views/aboutme/aboutme";
+import Contact from "./views/contact/contact";
+
+/* Import COMPONENTS */
+import Navbar from "../src/components/navbar/navbar"
+
+export default function App() {
+    return(
+        <Router>
+            <Navbar links={
+                <>
+                    <li><NavLink to="/" activeClassName="active" exact>Hello!</NavLink></li>
+                    <li><NavLink to="/project" activeClassName="active">Projects</NavLink></li>
+                    <li><NavLink to="/skill" activeClassName="active">Skill</NavLink></li>
+                    <li><NavLink to="/aboutme" activeClassName="active">About</NavLink></li>
+                    <li><NavLink to="/contact" activeClassName="active">Contact</NavLink></li>
+                </>
+            } />
+            <Switch>
+                <Route path="/" exact>
+                    <Main />
+                </Route>
+                <Route path="/project">
+                    <Project />
+                </Route>
+                <Route path="/skill">
+                    <Skill />
+                </Route>
+                <Route path="/aboutme">
+                    <AboutMe />
+                </Route>
+                <Route path="/contact">
+                    <Contact />
+                </Route>
+            </Switch>
+        </Router>
+    );
 }
-
-export default App;

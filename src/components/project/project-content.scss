@@ -1,0 +1,52 @@
+@import "../../style.scss";
+
+.project-content {
+    width: 624px;
+}
+
+.technologies-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.technologies-list li {
+    color: $second-black;
+    margin-left: 15px;
+}
+
+.reference-list {
+    margin-left: 30px;
+}
+
+.reference-list a {
+    color: $second-black;
+    text-decoration: underline;
+    transition: all 0.2s ease-in;
+}
+
+.reference-list a:hover {
+    background-color: $highlight-background;
+    padding: 0 5px;
+    color: $highlight-color;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .project-content {
+        width: 80%;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .project-content {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .project-content h1 {
+        font-size: 1.5rem;
+    }
+}

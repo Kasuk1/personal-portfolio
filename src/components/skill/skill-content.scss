@@ -1,0 +1,229 @@
+@import "../../style.scss";
+
+.skill-container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    box-shadow: 9px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-container::before {
+    content: "";
+    background-color: $second-color;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+    transition: all 0.2s linear;
+}
+
+.skill-container:hover::before {
+    top: 20px;
+    left: 20px;
+}
+
+.skill-divider {
+    width: calc(100%/3);
+    height: 700px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    transition: width 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.skill-divider.opened {
+    width: 100%;
+}
+
+.skill-divider.opened::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+}
+
+.skill-divider.closed {
+    width: 0;
+}
+
+.skill-divider.closed .skill-title {
+    display: none;
+}
+
+.skill-divider::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.30);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: background 0.4s ease-in;
+}
+
+.skill-divider:nth-child(1) {
+    background: url(../../assets/images/skill1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: fadeInLeft 0.8s ease-out;
+}
+
+.skill-divider:nth-child(2) {
+    background: url(../../assets/images/skill2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.skill-divider:nth-child(3) {
+    background: url(../../assets/images/skill3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: fadeInRight 0.8s ease-out;
+}
+
+.skill-title {
+    font-size: 2rem;
+    color: $highlight-color;
+    position: absolute;
+    bottom: 25px;
+    right: 35px;
+    z-index: 2;
+    pointer-events: none;
+    transition: all 0.1s ease-in;
+}
+
+.skill-divider:hover .skill-title {
+    background-color: $second-color;
+    padding: 0 10px;
+}
+
+.skill-divider:hover::after {
+    background: rgba(0, 0, 0, 0);
+}
+
+.skill-divider.opened:hover::after {
+    background: rgba(0, 0, 0, 0.30);
+}
+
+.skill-divider.opened .skill-title {
+    background-color: $second-color;
+    padding: 0 10px;
+}
+
+.skill-content {
+    width: 70%;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    padding-top: 40px;
+    padding-left: 45px;
+    color: $main-color;
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in 0.1s;
+}
+
+.skill-divider.opened .skill-content {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+}
+
+.skill-content p {
+    color: $main-color;
+}
+
+.skill-content h2 {
+    color: $second-color;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.skill-list ul {
+    margin-left: 20px;
+    margin-right: 120px;
+}
+
+.skill-list ul li {
+    margin-bottom: 15px;
+}
+
+.skill-technologies {
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.skill-technologies li {
+    margin: 0 40px  10px 20px;
+    min-width: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .skill-container {
+        width: 100%;
+        padding-bottom: 20px;
+        box-shadow: none;
+    }
+
+    .skill-container::before  {
+        display: none;
+    }
+
+    .skill-divider {
+        width: 100%;
+    }
+
+    .skill-content {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .skill-technologies {
+        justify-content: space-around;
+    }
+
+    .skill-technologies li {
+        margin: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .h2-technologies {
+        display: none;
+    }
+
+    .skill-technologies {
+        display: none;
+    }
+
+    .skill-divider {
+        height: 800px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .skill-divider {
+        height: 900px;
+    }
+}
