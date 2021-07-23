@@ -29,19 +29,19 @@ export default function App() {
                 </>
             } />
             <Switch>
-                <Route path="/" exact>
+                <Route path="/personal-portfolio/" exact>
                     <Main />
                 </Route>
-                <Route path="/project">
+                <Route path="/personal-portfolio/project">
                     <Project />
                 </Route>
-                <Route path="/skill">
+                <Route path="/personal-portfolio/skill">
                     <Skill />
                 </Route>
-                <Route path="/aboutme">
+                <Route path="/personal-portfolio/aboutme">
                     <AboutMe />
                 </Route>
-                <Route path="/contact">
+                <Route path="/personal-portfolio/contact">
                     <Contact />
                 </Route>
             </Switch>
