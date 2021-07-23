@@ -21,11 +21,11 @@ export default function App() {
         <Router>
             <Navbar links={
                 <>
-                    <li><NavLink to="/" activeClassName="active" exact>Hello!</NavLink></li>
-                    <li><NavLink to="/project" activeClassName="active">Projects</NavLink></li>
-                    <li><NavLink to="/skill" activeClassName="active">Skill</NavLink></li>
-                    <li><NavLink to="/aboutme" activeClassName="active">About</NavLink></li>
-                    <li><NavLink to="/contact" activeClassName="active">Contact</NavLink></li>
+                    <li><NavLink to="/personal-portfolio/" activeClassName="active" exact>Hello!</NavLink></li>
+                    <li><NavLink to="/personal-portfolio/project" activeClassName="active">Projects</NavLink></li>
+                    <li><NavLink to="/personal-portfolio/skill" activeClassName="active">Skill</NavLink></li>
+                    <li><NavLink to="/personal-portfolio/aboutme" activeClassName="active">About</NavLink></li>
+                    <li><NavLink to="/personal-portfolio/contact" activeClassName="active">Contact</NavLink></li>
                 </>
             } />
             <Switch>
