@@ -19,6 +19,7 @@ import Contact from './views/contact/contact';
 
 /* Import COMPONENTS */
 import Navbar from './components/navbar/navbar';
+import { MAIN_ROUTE_NAME } from './conts';
 
 export const App = () => {
   return (
@@ -27,27 +28,36 @@ export const App = () => {
         links={
           <>
             <li>
-              <NavLink to='/' activeClassName='active' exact>
+              <NavLink to={`${MAIN_ROUTE_NAME}`} activeClassName='active' exact>
                 Hello!
               </NavLink>
             </li>
             <li>
-              <NavLink to='/project' activeClassName='active'>
+              <NavLink
+                to={`${MAIN_ROUTE_NAME}/project`}
+                activeClassName='active'
+              >
                 Projects
               </NavLink>
             </li>
             <li>
-              <NavLink to='/skill' activeClassName='active'>
+              <NavLink to={`${MAIN_ROUTE_NAME}/skill`} activeClassName='active'>
                 Skills
               </NavLink>
             </li>
             <li>
-              <NavLink to='/aboutme' activeClassName='active'>
+              <NavLink
+                to={`${MAIN_ROUTE_NAME}/aboutme`}
+                activeClassName='active'
+              >
                 About
               </NavLink>
             </li>
             <li>
-              <NavLink to='/contact' activeClassName='active'>
+              <NavLink
+                to={`${MAIN_ROUTE_NAME}/contact`}
+                activeClassName='active'
+              >
                 Contact
               </NavLink>
             </li>
@@ -55,19 +65,19 @@ export const App = () => {
         }
       />
       <Switch>
-        <Route path='/' exact>
+        <Route path={`${MAIN_ROUTE_NAME}`} exact>
           <Main />
         </Route>
-        <Route path='/project'>
+        <Route path={`${MAIN_ROUTE_NAME}/project`}>
           <Project />
         </Route>
-        <Route path='/skill'>
+        <Route path={`${MAIN_ROUTE_NAME}/skill`}>
           <Skill />
         </Route>
-        <Route path='/aboutme'>
+        <Route path={`${MAIN_ROUTE_NAME}/aboutme`}>
           <About />
         </Route>
-        <Route path='/contact'>
+        <Route path={`${MAIN_ROUTE_NAME}/contact`}>
           <Contact />
         </Route>
       </Switch>
