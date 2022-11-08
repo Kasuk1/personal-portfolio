@@ -9,16 +9,17 @@ import 'animate.css';
 
 /* Import STYLES */
 import './style.scss';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
-/* Import VIEWS */
-import { Main } from './views/main';
-import { Project } from './views/project';
-import { Skill } from './views/skill';
-import { About } from './views/about';
-import Contact from './views/contact/contact';
+/* Import Loadables VIEWS */
+import { LoadableMain } from './views/main/LoadableMain';
+import { LoadableProject } from './views/project';
+import { LoadableSkill } from './views/skill/LoadableSkill';
+import { LoadableAbout } from './views/about';
+import { LoadableContact } from './views/contact';
 
 /* Import COMPONENTS */
-import Navbar from './components/navbar/navbar';
+import { Navbar } from './components/navbar';
 import { MAIN_ROUTE_NAME } from './conts';
 
 export const App = () => {
@@ -66,19 +67,19 @@ export const App = () => {
       />
       <Switch>
         <Route path={`${MAIN_ROUTE_NAME}`} exact>
-          <Main />
+          <LoadableMain />
         </Route>
         <Route path={`${MAIN_ROUTE_NAME}/project`}>
-          <Project />
+          <LoadableProject />
         </Route>
         <Route path={`${MAIN_ROUTE_NAME}/skill`}>
-          <Skill />
+          <LoadableSkill />
         </Route>
         <Route path={`${MAIN_ROUTE_NAME}/aboutme`}>
-          <About />
+          <LoadableAbout />
         </Route>
         <Route path={`${MAIN_ROUTE_NAME}/contact`}>
-          <Contact />
+          <LoadableContact />
         </Route>
       </Switch>
     </Router>

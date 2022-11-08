@@ -1,1 +1,1 @@
-export { Skill } from './Skill';
+export { LoadableSkill } from './LoadableSkill';

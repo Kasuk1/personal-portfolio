@@ -1,14 +1,14 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Skill1, Skill2, Skill3 } from '../../assets/images/skills';
 import FigmaLogo from '../../assets/images/figma-icon.svg';
 import AdobeXDLogo from '../../assets/images/adobexd-icon.svg';
 import InVisionLogo from '../../assets/images/invision-icon.svg';
 import PhotoshopLogo from '../../assets/images/photoshop-icon.svg';
-
 import HtmlLogo from '../../assets/images/html-logo.svg';
 import CssLogo from '../../assets/images/css-logo.svg';
 import JsLogo from '../../assets/images/js-logo.svg';
 import ReactLogo from '../../assets/images/react-logo.svg';
 import AngularLogo from '../../assets/images/angular-logo.svg';
-
 import NodeLogo from '../../assets/images/node-logo.svg';
 import ExpressLogo from '../../assets/images/express-logo.svg';
 import MongodbLogo from '../../assets/images/mongodb-logo.svg';
@@ -33,6 +33,12 @@ export const SkillContent = () => {
   return (
     <main className='skill-container'>
       <section className='skill-divider' onClick={activeDivider}>
+        <LazyLoadImage
+          className='skill-divider-img1'
+          alt=''
+          src={Skill1}
+          effect='blur'
+        />
         <h1 className='skill-title'>Web Design</h1>
         <section className='skill-content'>
           <p>
@@ -77,6 +83,12 @@ export const SkillContent = () => {
       </section>
 
       <section className='skill-divider' onClick={activeDivider}>
+        <LazyLoadImage
+          className='skill-divider-img2'
+          alt=''
+          src={Skill2}
+          effect='blur'
+        />
         <h1 className='skill-title'>Front-end</h1>
         <section className='skill-content'>
           <p>
@@ -128,6 +140,12 @@ export const SkillContent = () => {
       </section>
 
       <section className='skill-divider' onClick={activeDivider}>
+        <LazyLoadImage
+          className='skill-divider-img3'
+          alt=''
+          src={Skill3}
+          effect='blur'
+        />
         <h1 className='skill-title'>Back-end</h1>
         <section className='skill-content'>
           <p>

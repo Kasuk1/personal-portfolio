@@ -2,41 +2,45 @@
 
 .skill-container {
   width: 90%;
+  max-width: 970px;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
+  animation: skillContainerShadowAnimation 0.5s ease-in-out 2s forwards;
 }
 
-.skill-container:hover {
-  box-shadow: -8px 10px 5px rgba(0, 0, 0, 0.2);
-}
-
-.skill-container.opened {
-  box-shadow: -8px 10px 5px rgba(0, 0, 0, 0.2);
+@keyframes skillContainerShadowAnimation {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: -8px 10px 5px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .skill-container::before {
   content: '';
   background-color: $highlight-background;
   position: absolute;
-  top: 3px;
-  right: 3px;
-  width: 100%;
-  height: 100%;
   z-index: -1;
-  transition: all 0.2s linear;
+  animation: skillContainerBeforeAnimation 0.65s ease-in-out 1.8s forwards;
 }
 
-.skill-container:hover::before {
-  top: 16px;
-  right: 16px;
-}
-
-.skill-container.opened::before {
-  top: 16px;
-  right: 16px;
+@keyframes skillContainerBeforeAnimation {
+  0% {
+    opacity: 0;
+    top: 0;
+    right: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 16px;
+    right: 16px;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .skill-divider {
@@ -47,6 +51,10 @@
   overflow: hidden;
   z-index: 1;
   transition: width 0.1s ease-in-out;
+
+  & span {
+    height: 100%;
+  }
 }
 
 .skill-divider.opened {
@@ -78,28 +86,25 @@
   transition: background 0.25s ease-in;
 }
 
-.skill-divider:nth-child(1) {
-  background: url(../../assets/images/skills/skill1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  animation: fadeInLeft 0.5s ease-out;
+.skill-divider-img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
 }
 
-.skill-divider:nth-child(2) {
-  background: url(../../assets/images/skills/skill2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  animation: fadeInUp 1s ease-out;
+.skill-divider-img2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
 }
 
-.skill-divider:nth-child(3) {
-  background: url(../../assets/images/skills/skill3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  animation: fadeInRight 1.5s ease-out;
+.skill-divider-img3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
 }
 
 .skill-title {
@@ -143,6 +148,8 @@
   padding-left: 45px;
   color: $default-white;
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 2;
   pointer-events: none;
   transition: opacity 0.2s ease-in 0.1s;
