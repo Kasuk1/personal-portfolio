@@ -1,229 +1,238 @@
-@import "../../style.scss";
+@import '../../style.scss';
 
 .skill-container {
-    width: 90%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    box-shadow: 9px 4px 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.skill-container:hover {
+  box-shadow: -8px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.skill-container.opened {
+  box-shadow: -8px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 .skill-container::before {
-    content: "";
-    background-color: $second-color;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: -1;
-    transition: all 0.2s linear;
+  content: '';
+  background-color: $highlight-background;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.2s linear;
 }
 
 .skill-container:hover::before {
-    top: 20px;
-    left: 20px;
+  top: 16px;
+  right: 16px;
+}
+
+.skill-container.opened::before {
+  top: 16px;
+  right: 16px;
 }
 
 .skill-divider {
-    width: calc(100%/3);
-    height: 700px;
-    position: relative;
-    cursor: pointer;
-    z-index: 1;
-    transition: width 0.2s ease-in-out;
-    overflow: hidden;
+  cursor: pointer;
+  width: calc(100% / 3);
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: width 0.1s ease-in-out;
 }
 
 .skill-divider.opened {
-    width: 100%;
+  width: 100%;
 }
 
 .skill-divider.opened::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(8px);
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
 }
 
 .skill-divider.closed {
-    width: 0;
+  width: 0;
 }
 
 .skill-divider.closed .skill-title {
-    display: none;
+  display: none;
 }
 
 .skill-divider::after {
-    content: "";
-    background: rgba(0, 0, 0, 0.30);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: background 0.4s ease-in;
+  content: '';
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: background 0.25s ease-in;
 }
 
 .skill-divider:nth-child(1) {
-    background: url(../../assets/images/skill1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    animation: fadeInLeft 0.8s ease-out;
+  background: url(../../assets/images/skills/skill1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: fadeInLeft 0.5s ease-out;
 }
 
 .skill-divider:nth-child(2) {
-    background: url(../../assets/images/skill2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    animation: fadeInUp 0.8s ease-out;
+  background: url(../../assets/images/skills/skill2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: fadeInUp 1s ease-out;
 }
 
 .skill-divider:nth-child(3) {
-    background: url(../../assets/images/skill3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    animation: fadeInRight 0.8s ease-out;
+  background: url(../../assets/images/skills/skill3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: fadeInRight 1.5s ease-out;
 }
 
 .skill-title {
-    font-size: 2rem;
-    color: $highlight-color;
-    position: absolute;
-    bottom: 25px;
-    right: 35px;
-    z-index: 2;
-    pointer-events: none;
-    transition: all 0.1s ease-in;
+  font-size: 2rem;
+  color: $highlight-color;
+  position: absolute;
+  bottom: 25px;
+  right: 35px;
+  z-index: 2;
+  pointer-events: none;
+  transition: all 0.1s ease-in;
 }
 
 .skill-divider:hover .skill-title {
-    background-color: $second-color;
-    padding: 0 10px;
+  background-color: $highlight-background;
+  padding: 0 10px;
 }
 
 .skill-divider:hover::after {
-    background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
 }
 
 .skill-divider.opened:hover::after {
-    background: rgba(0, 0, 0, 0.30);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .skill-divider.opened .skill-title {
-    background-color: $second-color;
-    padding: 0 10px;
+  background-color: $highlight-background;
+  padding: 0 10px;
 }
 
 .skill-content {
-    width: 70%;
-    height: 0;
-    visibility: hidden;
-    opacity: 0;
-    padding-top: 40px;
-    padding-left: 45px;
-    color: $main-color;
-    position: absolute;
-    z-index: 2;
-    pointer-events: none;
-    transition: opacity 0.2s ease-in 0.1s;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 70%;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  padding-top: 40px;
+  padding-left: 45px;
+  color: $default-white;
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in 0.1s;
 }
 
 .skill-divider.opened .skill-content {
-    height: auto;
-    opacity: 1;
-    visibility: visible;
+  height: auto;
+  opacity: 1;
+  visibility: visible;
 }
 
 .skill-content p {
-    color: $main-color;
+  color: $default-white;
 }
 
 .skill-content h2 {
-    color: $second-color;
+  color: $second-color;
 }
 
 .skill-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 10px;
 }
 
-.skill-list ul {
-    margin-left: 20px;
-    margin-right: 120px;
-}
-
-.skill-list ul li {
-    margin-bottom: 15px;
+.skill-list li {
+  display: inline-flex;
+  background-color: $second-color;
+  border-radius: 10px;
+  color: $default-black;
+  padding: 0 6px;
 }
 
 .skill-technologies {
-    margin-top: 35px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .skill-technologies li {
-    margin: 0 40px  10px 20px;
-    min-width: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
+  margin: 0 40px 10px 20px;
+  min-width: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
 }
 
 @media only screen and (max-width: 1024px) {
-    .skill-container {
-        width: 100%;
-        padding-bottom: 20px;
-        box-shadow: none;
-    }
+  .skill-container {
+    width: 100%;
+    padding-bottom: 20px;
+    box-shadow: none;
+  }
 
-    .skill-container::before  {
-        display: none;
-    }
+  .skill-container::before {
+    display: none;
+  }
 
-    .skill-divider {
-        width: 100%;
-    }
+  .skill-divider {
+    backdrop-filter: blur(8px);
+    width: 100%;
+  }
 
-    .skill-content {
-        width: 100%;
-        padding: 15px;
-    }
+  .skill-content {
+    width: 100%;
+    padding: 15px;
+  }
 
-    .skill-technologies {
-        justify-content: space-around;
-    }
-
-    .skill-technologies li {
-        margin: 20px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .h2-technologies {
-        display: none;
-    }
-
-    .skill-technologies {
-        display: none;
-    }
-
-    .skill-divider {
-        height: 800px;
-    }
+  .skill-technologies li {
+    margin: 20px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-    .skill-divider {
-        height: 900px;
-    }
+  .skill-technologies {
+    gap: 4px;
+    min-width: auto;
+  }
+  .skill-technologies li {
+    background-color: $highlight-background;
+    border-radius: 10px;
+    padding: 0 6px;
+    margin: 0;
+  }
+
+  .skill-technologies li img {
+    display: none;
+  }
 }

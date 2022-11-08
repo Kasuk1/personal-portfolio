@@ -1,0 +1,11 @@
+.aboutHeader {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+}
+
+@media only screen and (max-width: 480px) {
+  .aboutHeader {
+    flex-direction: column;
+  }
+}
