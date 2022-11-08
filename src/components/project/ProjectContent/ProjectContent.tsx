@@ -20,10 +20,10 @@ export const ProjectContent: FC<ProjectContentProps> = ({
       <section>
         <h2>Stack</h2>
         <div className='technologies-list'>
-          {Object.keys(technologies).map((key) => (
-            <div>
+          {Object.keys(technologies).map((key, index) => (
+            <div key={index}>
               <h3>{key}</h3>
-              <ul key={`${key}_${name}`}>
+              <ul>
                 {technologies[key].map((tech) => (
                   <li key={`${tech}_${name}`}>{tech}</li>
                 ))}
