@@ -1,10 +1,6 @@
 /* Import BASICS */
-import { Switch, Route, NavLink, HashRouter } from 'react-router-dom';
+import { Switch, Route, HashRouter } from 'react-router-dom';
 import 'animate.css';
-
-/* Import STYLES */
-import './style.scss';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 
 /* Import Loadables VIEWS */
 import { LoadableMain } from './views/main/LoadableMain';
@@ -17,53 +13,14 @@ import { LoadableContact } from './views/contact';
 import { Navbar } from './components/navbar';
 import { MAIN_ROUTE_NAME } from './conts';
 
+/* Import STYLES */
+import './style.scss';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 export const App = () => {
   return (
     <HashRouter>
-      <Navbar
-        links={
-          <>
-            <li>
-              <NavLink
-                to={`${MAIN_ROUTE_NAME}/`}
-                activeClassName='active'
-                exact
-              >
-                Hello!
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to={`${MAIN_ROUTE_NAME}/project`}
-                activeClassName='active'
-              >
-                Projects
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to={`${MAIN_ROUTE_NAME}/skill`} activeClassName='active'>
-                Skills
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to={`${MAIN_ROUTE_NAME}/aboutme`}
-                activeClassName='active'
-              >
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to={`${MAIN_ROUTE_NAME}/contact`}
-                activeClassName='active'
-              >
-                Contact
-              </NavLink>
-            </li>
-          </>
-        }
-      />
+      <Navbar />
       <Switch>
         <Route path={`${MAIN_ROUTE_NAME}/`} exact>
           <LoadableMain />

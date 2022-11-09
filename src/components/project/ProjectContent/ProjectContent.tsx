@@ -1,6 +1,6 @@
-import './project-content.scss';
-import { ProjectDataType } from '../../../types/project';
 import { FC } from 'react';
+import { ProjectDataType } from '../../../types/project';
+import './project-content.scss';
 
 type ProjectContentProps = Omit<ProjectDataType, 'images'>;
 
@@ -9,10 +9,20 @@ export const ProjectContent: FC<ProjectContentProps> = ({
   description,
   references,
   technologies,
+  status,
 }) => {
+  const statusStyle = {
+    backgroundColor: status === 'Active' ? 'green' : 'red',
+  };
+
   return (
     <section className='project-content'>
-      <h1 className='text-highlight'>{name}</h1>
+      <div className='flex column align-item-start gap-5'>
+        <h1 className='project-content__title'>{name}</h1>
+        <span className='project-content__status' style={statusStyle}>
+          {status}
+        </span>
+      </div>
       <section>
         <h2>Description</h2>
         <p>{description}</p>

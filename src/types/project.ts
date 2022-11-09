@@ -17,4 +17,5 @@ export type ProjectDataType = {
   technologies: { [key: string]: string[] };
   references: ProjectReferenceType[];
   images?: ProjectImageType[];
+  status: string;
 };

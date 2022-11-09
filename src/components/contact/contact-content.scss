@@ -1,32 +1,38 @@
-@import "../../style.scss";
+@import '../../style.scss';
 
 .contact-text {
-    max-width: 697px;
-    text-align: center;
-    margin-top: 20vmin;
-    font-size: 1.5rem;
-    font-weight:400;
+  max-width: 697px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+
+  &__question {
+    color: $highlight-background;
+    font-size: 1.4rem;
+  }
+
+  &__paragraph {
+    color: $second-color;
+  }
 }
 
 .logos-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 55px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .logos-container a {
-    margin: 10px 25px;
-    transition: all 0.1s ease-in;
+  margin: 10px 25px;
+  transition: all 0.1s ease-in;
 }
 
 .logos-container a:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 @media only screen and (max-width: 480px) {
-    .contact-text {
-        margin-top: 0vmin;
-        font-size: 1rem;
-    }
+  .contact-text {
+    font-size: 1rem;
+  }
 }

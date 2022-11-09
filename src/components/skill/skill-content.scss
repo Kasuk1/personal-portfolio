@@ -25,7 +25,7 @@
   background-color: $highlight-background;
   position: absolute;
   z-index: -1;
-  animation: skillContainerBeforeAnimation 0.65s ease-in-out 1.8s forwards;
+  animation: skillContainerBeforeAnimation 0.65s ease-in-out 1s forwards;
 }
 
 @keyframes skillContainerBeforeAnimation {
