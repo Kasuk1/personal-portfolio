@@ -1,10 +1,5 @@
 /* Import BASICS */
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  NavLink,
-} from 'react-router-dom';
+import { Switch, Route, NavLink, HashRouter } from 'react-router-dom';
 import 'animate.css';
 
 /* Import STYLES */
@@ -24,7 +19,7 @@ import { MAIN_ROUTE_NAME } from './conts';
 
 export const App = () => {
   return (
-    <Router>
+    <HashRouter>
       <Navbar
         links={
           <>
@@ -82,6 +77,6 @@ export const App = () => {
           <LoadableContact />
         </Route>
       </Switch>
-    </Router>
+    </HashRouter>
   );
 };
