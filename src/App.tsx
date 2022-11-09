@@ -15,7 +15,7 @@ import { LoadableContact } from './views/contact';
 
 /* Import COMPONENTS */
 import { Navbar } from './components/navbar';
-import { MAIN_ROUTE_NAME } from './conts';
+import { MAIN_ROUTE_NAME, RELATIVE_ROUTE_NAME } from './conts';
 
 export const App = () => {
   return (
@@ -65,19 +65,19 @@ export const App = () => {
         }
       />
       <Switch>
-        <Route path={`${MAIN_ROUTE_NAME}`} exact>
+        <Route path={`${RELATIVE_ROUTE_NAME}`} exact>
           <LoadableMain />
         </Route>
-        <Route path={`${MAIN_ROUTE_NAME}/project`}>
+        <Route path={`${RELATIVE_ROUTE_NAME}/project`}>
           <LoadableProject />
         </Route>
-        <Route path={`${MAIN_ROUTE_NAME}/skill`}>
+        <Route path={`${RELATIVE_ROUTE_NAME}/skill`}>
           <LoadableSkill />
         </Route>
-        <Route path={`${MAIN_ROUTE_NAME}/aboutme`}>
+        <Route path={`${RELATIVE_ROUTE_NAME}/aboutme`}>
           <LoadableAbout />
         </Route>
-        <Route path={`${MAIN_ROUTE_NAME}/contact`}>
+        <Route path={`${RELATIVE_ROUTE_NAME}/contact`}>
           <LoadableContact />
         </Route>
       </Switch>
