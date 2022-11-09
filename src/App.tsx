@@ -25,7 +25,7 @@ export const App = () => {
           <>
             <li>
               <NavLink
-                to={`${MAIN_ROUTE_NAME}/`}
+                to={`${MAIN_ROUTE_NAME}/#`}
                 activeClassName='active'
                 exact
               >
@@ -34,20 +34,23 @@ export const App = () => {
             </li>
             <li>
               <NavLink
-                to={`${MAIN_ROUTE_NAME}/project`}
+                to={`${MAIN_ROUTE_NAME}/#/project`}
                 activeClassName='active'
               >
                 Projects
               </NavLink>
             </li>
             <li>
-              <NavLink to={`${MAIN_ROUTE_NAME}/skill`} activeClassName='active'>
+              <NavLink
+                to={`${MAIN_ROUTE_NAME}/#/skill`}
+                activeClassName='active'
+              >
                 Skills
               </NavLink>
             </li>
             <li>
               <NavLink
-                to={`${MAIN_ROUTE_NAME}/aboutme`}
+                to={`${MAIN_ROUTE_NAME}/#/aboutme`}
                 activeClassName='active'
               >
                 About
@@ -55,7 +58,7 @@ export const App = () => {
             </li>
             <li>
               <NavLink
-                to={`${MAIN_ROUTE_NAME}/contact`}
+                to={`${MAIN_ROUTE_NAME}/#/contact`}
                 activeClassName='active'
               >
                 Contact
@@ -68,16 +71,16 @@ export const App = () => {
         <Route path={`${RELATIVE_ROUTE_NAME}`} exact>
           <LoadableMain />
         </Route>
-        <Route path={`${RELATIVE_ROUTE_NAME}/project`}>
+        <Route path={`${RELATIVE_ROUTE_NAME}/#/project`}>
           <LoadableProject />
         </Route>
-        <Route path={`${RELATIVE_ROUTE_NAME}/skill`}>
+        <Route path={`${RELATIVE_ROUTE_NAME}/#/skill`}>
           <LoadableSkill />
         </Route>
-        <Route path={`${RELATIVE_ROUTE_NAME}/aboutme`}>
+        <Route path={`${RELATIVE_ROUTE_NAME}/#/aboutme`}>
           <LoadableAbout />
         </Route>
-        <Route path={`${RELATIVE_ROUTE_NAME}/contact`}>
+        <Route path={`${RELATIVE_ROUTE_NAME}/#/contact`}>
           <LoadableContact />
         </Route>
       </Switch>
