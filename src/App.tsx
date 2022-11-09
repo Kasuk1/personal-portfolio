@@ -65,7 +65,7 @@ export const App = () => {
         }
       />
       <Switch>
-        <Route path={`${MAIN_ROUTE_NAME}`} exact>
+        <Route path={`${MAIN_ROUTE_NAME}/`} exact>
           <LoadableMain />
         </Route>
         <Route path={`${MAIN_ROUTE_NAME}/project`}>
