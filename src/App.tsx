@@ -15,7 +15,7 @@ import { LoadableContact } from './views/contact';
 
 /* Import COMPONENTS */
 import { Navbar } from './components/navbar';
-import { MAIN_ROUTE_NAME, RELATIVE_ROUTE_NAME } from './conts';
+import { MAIN_ROUTE_NAME } from './conts';
 
 export const App = () => {
   return (
@@ -25,7 +25,7 @@ export const App = () => {
           <>
             <li>
               <NavLink
-                to={`${MAIN_ROUTE_NAME}/#`}
+                to={`${MAIN_ROUTE_NAME}/`}
                 activeClassName='active'
                 exact
               >
@@ -34,23 +34,20 @@ export const App = () => {
             </li>
             <li>
               <NavLink
-                to={`${MAIN_ROUTE_NAME}/#/project`}
+                to={`${MAIN_ROUTE_NAME}/project`}
                 activeClassName='active'
               >
                 Projects
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to={`${MAIN_ROUTE_NAME}/#/skill`}
-                activeClassName='active'
-              >
+              <NavLink to={`${MAIN_ROUTE_NAME}/skill`} activeClassName='active'>
                 Skills
               </NavLink>
             </li>
             <li>
               <NavLink
-                to={`${MAIN_ROUTE_NAME}/#/aboutme`}
+                to={`${MAIN_ROUTE_NAME}/aboutme`}
                 activeClassName='active'
               >
                 About
@@ -58,7 +55,7 @@ export const App = () => {
             </li>
             <li>
               <NavLink
-                to={`${MAIN_ROUTE_NAME}/#/contact`}
+                to={`${MAIN_ROUTE_NAME}/contact`}
                 activeClassName='active'
               >
                 Contact
@@ -68,19 +65,19 @@ export const App = () => {
         }
       />
       <Switch>
-        <Route path={`${RELATIVE_ROUTE_NAME}`} exact>
+        <Route path={`${MAIN_ROUTE_NAME}`} exact>
           <LoadableMain />
         </Route>
-        <Route path={`${RELATIVE_ROUTE_NAME}/#/project`}>
+        <Route path={`${MAIN_ROUTE_NAME}/project`}>
           <LoadableProject />
         </Route>
-        <Route path={`${RELATIVE_ROUTE_NAME}/#/skill`}>
+        <Route path={`${MAIN_ROUTE_NAME}/skill`}>
           <LoadableSkill />
         </Route>
-        <Route path={`${RELATIVE_ROUTE_NAME}/#/aboutme`}>
+        <Route path={`${MAIN_ROUTE_NAME}/aboutme`}>
           <LoadableAbout />
         </Route>
-        <Route path={`${RELATIVE_ROUTE_NAME}/#/contact`}>
+        <Route path={`${MAIN_ROUTE_NAME}/contact`}>
           <LoadableContact />
         </Route>
       </Switch>
