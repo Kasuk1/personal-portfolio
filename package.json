@@ -2,7 +2,7 @@
   "name": "portfolio-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://kasuk1.github.io/#/personal-portfolio",
+  "homepage": "http://kasuk1.github.io/personal-portfolio/#",
   "scripts": {
     "predeploy": "npm rum build",
     "deploy": "gh-pages -d build",

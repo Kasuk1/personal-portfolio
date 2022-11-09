@@ -24,7 +24,11 @@ export const App = () => {
         links={
           <>
             <li>
-              <NavLink to={`${MAIN_ROUTE_NAME}`} activeClassName='active' exact>
+              <NavLink
+                to={`${MAIN_ROUTE_NAME}/`}
+                activeClassName='active'
+                exact
+              >
                 Hello!
               </NavLink>
             </li>

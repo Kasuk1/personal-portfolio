@@ -1,1 +1,1 @@
-export const MAIN_ROUTE_NAME = '/personal-portfolio';
+export const MAIN_ROUTE_NAME = '';
