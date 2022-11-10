@@ -98,7 +98,7 @@ export const aboutData: AboutDataType = {
     titleName: 'Languages',
     fields: [
       {
-        functions: ['Spanish (Native)', 'English - B2'],
+        functions: ['Spanish (Native)', 'English - C1'],
       },
     ],
   },
