@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/personal-portfolio/static/css/main.b9ca0ac7.css",
-    "main.js": "/personal-portfolio/static/js/main.213bf979.js",
+    "main.js": "/personal-portfolio/static/js/main.76b2e1fd.js",
     "static/css/163.e5627652.chunk.css": "/personal-portfolio/static/css/163.e5627652.chunk.css",
-    "static/js/163.5a9b0bb0.chunk.js": "/personal-portfolio/static/js/163.5a9b0bb0.chunk.js",
-    "static/css/580.c998f0f9.chunk.css": "/personal-portfolio/static/css/580.c998f0f9.chunk.css",
+    "static/js/163.e527f740.chunk.js": "/personal-portfolio/static/js/163.e527f740.chunk.js",
+    "static/css/580.0ce980e6.chunk.css": "/personal-portfolio/static/css/580.0ce980e6.chunk.css",
     "static/js/580.4b6d2004.chunk.js": "/personal-portfolio/static/js/580.4b6d2004.chunk.js",
     "static/css/80.90f1ffe6.chunk.css": "/personal-portfolio/static/css/80.90f1ffe6.chunk.css",
     "static/js/80.2d180e62.chunk.js": "/personal-portfolio/static/js/80.2d180e62.chunk.js",
@@ -59,10 +59,10 @@
     "static/media/facebook-logo.svg": "/personal-portfolio/static/media/facebook-logo.d60b0ba2c0d8012f5031b840c9efa1a1.svg",
     "index.html": "/personal-portfolio/index.html",
     "main.b9ca0ac7.css.map": "/personal-portfolio/static/css/main.b9ca0ac7.css.map",
-    "main.213bf979.js.map": "/personal-portfolio/static/js/main.213bf979.js.map",
+    "main.76b2e1fd.js.map": "/personal-portfolio/static/js/main.76b2e1fd.js.map",
     "163.e5627652.chunk.css.map": "/personal-portfolio/static/css/163.e5627652.chunk.css.map",
-    "163.5a9b0bb0.chunk.js.map": "/personal-portfolio/static/js/163.5a9b0bb0.chunk.js.map",
-    "580.c998f0f9.chunk.css.map": "/personal-portfolio/static/css/580.c998f0f9.chunk.css.map",
+    "163.e527f740.chunk.js.map": "/personal-portfolio/static/js/163.e527f740.chunk.js.map",
+    "580.0ce980e6.chunk.css.map": "/personal-portfolio/static/css/580.0ce980e6.chunk.css.map",
     "580.4b6d2004.chunk.js.map": "/personal-portfolio/static/js/580.4b6d2004.chunk.js.map",
     "80.90f1ffe6.chunk.css.map": "/personal-portfolio/static/css/80.90f1ffe6.chunk.css.map",
     "80.2d180e62.chunk.js.map": "/personal-portfolio/static/js/80.2d180e62.chunk.js.map",
@@ -77,6 +77,6 @@
   },
   "entrypoints": [
     "static/css/main.b9ca0ac7.css",
-    "static/js/main.213bf979.js"
+    "static/js/main.76b2e1fd.js"
   ]
 }
