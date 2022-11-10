@@ -20,28 +20,24 @@
   padding: 0;
 }
 
-.nav-list li {
-  margin: 0 10px;
-}
-
 .nav-list li a {
   color: $second-color;
   font-size: 1rem;
-  transition: all 0.1s ease-in;
+  padding: 4px 8px;
+  transition: all 0.1s ease-in-out;
 }
 
 .nav-list li a:hover {
-  background-color: $highlight-background;
-  color: $highlight-color;
-  padding: 5px 10px;
+  border-bottom: 3px solid $alternate-color;
 }
 
 .nav-list li .active {
-  font-weight: 500;
-  background-color: $highlight-background;
-  padding: 5px 10px;
-  color: $highlight-color;
   box-sizing: border-box;
+  background-color: $highlight-background;
+  border-bottom: 3px solid $alternate-color;
+  color: $highlight-color;
+  font-weight: 500;
+  padding: 4px 8px;
 }
 
 .logo {
@@ -75,10 +71,16 @@
 
 @media only screen and (max-width: 480px) {
   .navbar {
+    flex-direction: column;
     justify-content: center;
+    gap: 10px;
   }
 
   .nav-list {
-    display: none;
+    justify-content: center;
+  }
+
+  .nav-list li a {
+    font-size: 0.85rem;
   }
 }

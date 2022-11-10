@@ -14,7 +14,7 @@ export const Main = () => {
           className={`${classes.main_description} animate__animated animate__fadeInDown`}
         >
           Welcome to my world. You can see more information about me and my
-          experience through my profesional career. I hope you find it
+          experience through my profesional career in here. I hope you find it
           interesting.
         </p>
       </div>
