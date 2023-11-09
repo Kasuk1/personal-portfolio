@@ -1,1 +1,0 @@
-export { LoadableContact } from './LoadableContact';

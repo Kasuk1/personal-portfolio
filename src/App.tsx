@@ -1,43 +1,19 @@
 /* Import BASICS */
-import { Switch, Route, HashRouter } from 'react-router-dom';
-import 'animate.css';
 
 /* Import Loadables VIEWS */
-import { LoadableMain } from './views/main/LoadableMain';
-import { LoadableProject } from './views/project';
-import { LoadableSkill } from './views/skill/LoadableSkill';
-import { LoadableAbout } from './views/about';
-import { LoadableContact } from './views/contact';
+import { Main } from 'views';
 
 /* Import COMPONENTS */
-import { Navbar } from './components/navbar';
-import { MAIN_ROUTE_NAME } from './conts';
+import { Navbar } from './components';
 
 /* Import STYLES */
 import './style.scss';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export const App = () => {
   return (
-    <HashRouter>
+    <>
       <Navbar />
-      <Switch>
-        <Route path={`${MAIN_ROUTE_NAME}/`} exact>
-          <LoadableMain />
-        </Route>
-        <Route path={`${MAIN_ROUTE_NAME}/project`}>
-          <LoadableProject />
-        </Route>
-        <Route path={`${MAIN_ROUTE_NAME}/skill`}>
-          <LoadableSkill />
-        </Route>
-        <Route path={`${MAIN_ROUTE_NAME}/aboutme`}>
-          <LoadableAbout />
-        </Route>
-        <Route path={`${MAIN_ROUTE_NAME}/contact`}>
-          <LoadableContact />
-        </Route>
-      </Switch>
-    </HashRouter>
+      <Main />
+    </>
   );
 };

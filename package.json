@@ -2,14 +2,14 @@
   "name": "portfolio-project",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "homepage": "http://kasuk1.github.io/personal-portfolio/#",
   "scripts": {
     "predeploy": "npm rum build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "eslintConfig": {
     "extends": [
@@ -30,28 +30,32 @@
     ]
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "animate.css": "^4.1.1",
-    "gh-pages": "^3.2.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-lazy-load-image-component": "^1.5.6",
-    "react-loadable": "^5.5.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^5.0.1",
-    "web-vitals": "^1.1.2"
+    "@react-three/drei": "^9.88.11",
+    "@react-three/fiber": "^8.15.9",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.495",
+    "@types/three": "^0.158.1",
+    "framer-motion": "^10.16.4",
+    "framer-motion-3d": "^10.16.4",
+    "gh-pages": "^6.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-lazy-load-image-component": "^1.6.0",
+    "react-router-dom": "^6.18.0",
+    "three": "^0.158.0",
+    "vite-tsconfig-paths": "^4.2.1",
+    "web-vitals": "^3.5.0"
   },
   "devDependencies": {
-    "@types/jest": "^29.2.1",
-    "@types/node": "^18.11.9",
-    "@types/react": "^18.0.24",
-    "@types/react-dom": "^18.0.8",
-    "@types/react-lazy-load-image-component": "^1.5.2",
-    "@types/react-loadable": "^5.5.6",
+    "@types/node": "^20.8.10",
+    "@types/react": "^18.2.34",
+    "@types/react-dom": "^18.2.14",
+    "@types/react-lazy-load-image-component": "^1.6.2",
     "@types/react-router-dom": "^5.3.3",
-    "sass": "^1.55.0",
-    "typescript": "^4.8.4"
+    "@vitejs/plugin-react": "^4.1.1",
+    "sass": "^1.69.5",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0",
+    "vite-plugin-html": "^3.2.0"
   }
 }

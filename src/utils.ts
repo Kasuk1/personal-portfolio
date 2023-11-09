@@ -1,3 +1,8 @@
+/**
+ * @deprecated since version 2.0 - Using R3F
+ * Please avoid use due to sections(routes) and skills container
+ * was removed from webapp
+ */
 export const findAndUpdateDividerSkillSelector = (
   event: React.MouseEvent<HTMLElement, MouseEvent>
 ) => {

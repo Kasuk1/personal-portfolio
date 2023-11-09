@@ -1,1 +1,0 @@
-export { LoadableAbout } from './LoadableAbout';

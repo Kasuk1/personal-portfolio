@@ -1,0 +1,65 @@
+@import '../../../style.scss';
+
+.navbar {
+  max-width: 1640px;
+  position: relative;
+  padding: 1rem 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list {
+  list-style-type: none;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-list li a {
+  color: $default-gray;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 4px 5px;
+  transition: all 0.2s ease-in;
+}
+
+.nav-list li a:hover {
+  border-bottom: 3px solid $alternate-color;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.letter-i {
+  color: #350e56;
+}
+
+.letter-c {
+  color: #813da4;
+}
+
+.letter-f {
+  color: #b294c1;
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .nav-list {
+    justify-content: center;
+  }
+
+  .nav-list li a {
+    font-size: 0.85rem;
+  }
+}

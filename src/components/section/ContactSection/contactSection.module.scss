@@ -1,0 +1,103 @@
+.contactSection {
+  height: 100vh;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  &_emailForm {
+    border-radius: 5px;
+    padding: 0.8rem 0.5rem;
+    margin: 0 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  &_title {
+    background-color: #cea2e4;
+    color: #030811;
+    padding: 0 0.2rem;
+  }
+
+  &_emailInput {
+    background-color: #091223;
+    border: none;
+    color: #e9eff8;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 0.5rem;
+    width: 25rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+  &_messageInput {
+    background-color: #091223;
+    border: none;
+    color: #e9eff8;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.5rem 0.5rem;
+    width: 25rem;
+    min-width: 10rem;
+    height: 8rem;
+    max-height: 15rem;
+  }
+
+  &_submitButton {
+    background-color: #e1e7ec;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    border: none;
+
+    font-size: 1.4rem;
+    padding: 0.6rem 2.2rem;
+  }
+
+  &_logosContainer {
+    padding: 0 2rem;
+    margin-top: 10rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    & > a {
+      & img {
+        width: 2rem;
+        filter: invert(74%) sepia(22%) saturate(1191%) hue-rotate(216deg)
+          brightness(98%) contrast(81%);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .contactSection {
+    justify-content: flex-start;
+
+    &_emailForm {
+      margin: 0 1rem;
+    }
+
+    &_title {
+      margin-top: 1rem;
+    }
+
+    &_emailInput {
+      width: 100%;
+    }
+
+    &_messageInput {
+      width: 100%;
+    }
+
+    &_submitButton {
+    }
+  }
+}

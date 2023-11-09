@@ -1,0 +1,51 @@
+@import '../../../style.scss';
+
+.skillChunk {
+  &_tech {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+
+    &_level {
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+    }
+
+    &_name {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+  }
+
+  &_experience {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+    text-align: end;
+
+    &_date {
+      font-size: 0.7rem;
+    }
+
+    &_companyName {
+      color: #e76a9e;
+      font-weight: bold;
+    }
+
+    &_role {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .skillChunk {
+    &_experience {
+      &_date {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import url('../../../style.scss');
+
+.projectSection {
+  position: relative;
+  height: 100vh;
+  padding: 0 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &_title {
+    background-color: #cea2e4;
+    color: #000;
+    font-weight: 500;
+    line-height: 1.1;
+    z-index: 2;
+  }
+
+  &_descriptionContainer {
+    padding-left: 25rem;
+    text-align: end;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+    z-index: 2;
+  }
+
+  &_description {
+    display: flex;
+    flex-direction: column;
+
+    & > a {
+      color: #e9dcc5;
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .projectSection {
+    padding: 0 1rem;
+
+    &_title {
+    }
+
+    &_descriptionContainer {
+      padding-left: 2rem;
+    }
+  }
+}
