@@ -1,11 +1,6 @@
 import { Canvas } from '@react-three/fiber';
 import { motion } from 'framer-motion';
 import { Astronaut } from 'components';
-import FacebookLogo from 'assets/images/facebook-logo.svg';
-import LinkedinLogo from 'assets/images/linkedin-logo.svg';
-import GitHubLogo from 'assets/images/github-logo.svg';
-import InstagramLogo from 'assets/images/instagram-logo.svg';
-import YoutubeLogo from 'assets/images/youtube-logo.svg';
 import classes from './contactSection.module.scss';
 
 export const ContactSection = () => {
@@ -153,7 +148,7 @@ export const ContactSection = () => {
             },
           }}
         >
-          <img src={FacebookLogo} alt='' />
+          <img src='src/assets/images/facebook-logo.svg' alt='' />
         </motion.a>
         <motion.a
           href='https://www.linkedin.com/in/igorcf/'
@@ -172,7 +167,7 @@ export const ContactSection = () => {
             },
           }}
         >
-          <img src={LinkedinLogo} alt='' />
+          <img src='src/assets/images/linkedin-logo.svg' alt='' />
         </motion.a>
         <motion.a
           href='https://github.com/Kasuk1?tab=repositories'
@@ -191,7 +186,7 @@ export const ContactSection = () => {
             },
           }}
         >
-          <img src={GitHubLogo} alt='' />
+          <img src='src/assets/images/github-logo.svg' alt='' />
         </motion.a>
         <motion.a
           href='https://www.instagram.com/yesimigori/'
@@ -210,7 +205,7 @@ export const ContactSection = () => {
             },
           }}
         >
-          <img src={InstagramLogo} alt='' />
+          <img src='src/assets/images/instagram-logo.svg' alt='' />
         </motion.a>
         <motion.a
           href='https://www.youtube.com/@gnosiophobia'
@@ -229,7 +224,7 @@ export const ContactSection = () => {
             },
           }}
         >
-          <img src={YoutubeLogo} alt='' />
+          <img src='src/assets/images/youtube-logo.svg' alt='' />
         </motion.a>
       </div>
     </section>

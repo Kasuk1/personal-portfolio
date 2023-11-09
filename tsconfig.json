@@ -7,7 +7,7 @@
     "sourceMap": true,
     "allowJs": true,
     "jsx": "react-jsx",
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
     "rootDir": "src",
     "noImplicitReturns": true,
     "noImplicitThis": true,
@@ -32,5 +32,5 @@
     "src/setupTests.ts"
   ],
   "types": ["vite/client"],
-  "include": ["src", "react-app-env.d.ts", "declaration.d.ts"]
+  "include": ["src", "src/**/*.ts", "react-app-env.d.ts", "declaration.d.ts"]
 }
