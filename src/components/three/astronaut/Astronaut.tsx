@@ -49,7 +49,7 @@ export const Astronaut = (props: any) => {
   const group = useRef<Group>();
   const sphereRef = useRef<Mesh>(null);
   const { nodes, materials, animations } = useGLTF(
-    'src/assets/three/astronaut/outhere_space_buddy.glb'
+    'assets/three/astronaut/outhere_space_buddy.glb'
   ) as GLTFResult;
 
   const { actions, names } = useAnimations(animations, group);

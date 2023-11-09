@@ -148,7 +148,7 @@ export const ContactSection = () => {
             },
           }}
         >
-          <img src='src/assets/images/facebook-logo.svg' alt='' />
+          <img src='assets/images/facebook-logo.svg' alt='' />
         </motion.a>
         <motion.a
           href='https://www.linkedin.com/in/igorcf/'
@@ -167,7 +167,7 @@ export const ContactSection = () => {
             },
           }}
         >
-          <img src='src/assets/images/linkedin-logo.svg' alt='' />
+          <img src='assets/images/linkedin-logo.svg' alt='' />
         </motion.a>
         <motion.a
           href='https://github.com/Kasuk1?tab=repositories'
@@ -186,7 +186,7 @@ export const ContactSection = () => {
             },
           }}
         >
-          <img src='src/assets/images/github-logo.svg' alt='' />
+          <img src='assets/images/github-logo.svg' alt='' />
         </motion.a>
         <motion.a
           href='https://www.instagram.com/yesimigori/'
@@ -205,7 +205,7 @@ export const ContactSection = () => {
             },
           }}
         >
-          <img src='src/assets/images/instagram-logo.svg' alt='' />
+          <img src='assets/images/instagram-logo.svg' alt='' />
         </motion.a>
         <motion.a
           href='https://www.youtube.com/@gnosiophobia'
@@ -224,7 +224,7 @@ export const ContactSection = () => {
             },
           }}
         >
-          <img src='src/assets/images/youtube-logo.svg' alt='' />
+          <img src='assets/images/youtube-logo.svg' alt='' />
         </motion.a>
       </div>
     </section>

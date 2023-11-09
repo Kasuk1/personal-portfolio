@@ -23,7 +23,7 @@ export const Planet = () => {
     <motion.group initial='hidden' animate='visible' variants={variants}>
       <Gltf
         ref={planetRef}
-        src='src/assets/three/planet/stylized_planet.glb'
+        src='assets/three/planet/stylized_planet.glb'
         position={[0.45, 0, 0]}
         scale={0.45}
       />

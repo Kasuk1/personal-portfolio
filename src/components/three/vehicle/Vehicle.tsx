@@ -31,7 +31,7 @@ export const Vehicle = () => {
     <motion.group initial='hidden' animate='visible' variants={variants}>
       <Gltf
         ref={vehicleRef}
-        src='src/assets/three/vehicle/scene.gltf'
+        src='assets/three/vehicle/scene.gltf'
         rotation={[-0.3, -0.9, 0]}
       />
     </motion.group>

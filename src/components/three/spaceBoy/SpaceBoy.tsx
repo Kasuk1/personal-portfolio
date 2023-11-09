@@ -31,7 +31,7 @@ export const SpaceBoy = () => {
 
       <Gltf
         ref={spaceBoyRef}
-        src='src/assets/three/spaceBoy/space_boi.glb'
+        src='assets/three/spaceBoy/space_boi.glb'
         position={[0, 0, -15]}
         rotation={[0.6, 3.13, 0]}
         scale={0.4}
