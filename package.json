@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "http://kasuk1.github.io/personal-portfolio/#",
   "scripts": {
-    "predeploy": "npm rum dist",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "vite",
     "build": "tsc && vite build",
