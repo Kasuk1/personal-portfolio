@@ -32,7 +32,7 @@
   "dependencies": {
     "@react-three/drei": "^9.88.11",
     "@react-three/fiber": "^8.15.9",
-    "@splinetool/loader": "^0.9.507",
+    "@splinetool/loader": "^0.9.508",
     "@splinetool/r3f-spline": "^1.0.2",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.495",

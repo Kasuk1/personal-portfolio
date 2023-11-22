@@ -7,7 +7,7 @@ export const KeyboardPad = ({ nodes, materials }: Common3dObjProps) => {
     <motion.mesh
       name='Pad Keyboard'
       geometry={nodes['Pad Keyboard'].geometry}
-      material={materials.Rug}
+      material={materials['Pad Keyboard']}
       castShadow
       receiveShadow
       position={[80.75, -19.35, -27.95]}

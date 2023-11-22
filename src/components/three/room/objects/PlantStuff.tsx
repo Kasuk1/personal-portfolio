@@ -4,7 +4,7 @@ import { Common3dObjProps } from 'types/r3f';
 
 export const PlantStuff = ({ nodes, materials }: Common3dObjProps) => {
   return (
-    <group name='Plant Stuff' position={[109.04, -120.87, 136.02]}>
+    <group name='Plant Stuff' position={[128.13, -120.87, 136.02]}>
       <motion.group
         name='Plant Type 1'
         position={[0, 0.18, 0]}

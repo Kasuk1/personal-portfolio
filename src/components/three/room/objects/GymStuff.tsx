@@ -32,7 +32,7 @@ export const GymStuff = ({ nodes, materials }: Common3dObjProps) => {
         <mesh
           name='Cylinder 3'
           geometry={nodes['Cylinder 3'].geometry}
-          material={materials['Bag Main Color']}
+          material={materials['Bag Color 2']}
           castShadow
           receiveShadow
           position={[0, -4.44, -9.67]}
@@ -125,7 +125,7 @@ export const GymStuff = ({ nodes, materials }: Common3dObjProps) => {
       <mesh
         name='Gym Ball'
         geometry={nodes['Gym Ball'].geometry}
-        material={materials.Blue}
+        material={materials.Ball}
         castShadow
         receiveShadow
         position={[5.19, -78.86, -6.67]}

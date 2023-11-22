@@ -90,18 +90,18 @@ export const Scene = ({
           ref={directLightRef}
           color='#ffffff'
           castShadow
-          intensity={3.5}
+          intensity={5}
           shadow-camera-near={-10000}
           shadow-camera-far={100000}
           shadow-camera-left={-1000}
           shadow-camera-right={1000}
           shadow-camera-top={1000}
           shadow-camera-bottom={-1000}
-          position={[-125, 158, -25]}
+          position={[-125, 158, 0]}
         />
         <hemisphereLight
           name='Default Ambient Light'
-          intensity={1.5}
+          intensity={0.75}
           color='#D3D3D3'
         />
       </group>

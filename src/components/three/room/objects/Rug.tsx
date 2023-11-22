@@ -7,7 +7,7 @@ export const Rug = ({ nodes, materials }: Common3dObjProps) => {
     <motion.mesh
       name='Rug'
       geometry={nodes.Rug.geometry}
-      material={materials['Monitor Black']}
+      material={materials.Rug}
       castShadow
       receiveShadow
       position={[32.75, -155.56, -32.76]}

@@ -17,7 +17,7 @@ export const Desk = ({ nodes, materials }: Common3dObjProps) => {
       <mesh
         name='Table'
         geometry={nodes.Table.geometry}
-        material={materials.Wood}
+        material={materials.Table}
         castShadow
         receiveShadow
         position={[0, 59.36, 0]}

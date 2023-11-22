@@ -24,7 +24,7 @@ export const ExtraStuff = ({ nodes, materials }: Common3dObjProps) => {
         <mesh
           name='Light 4'
           geometry={nodes['Light 4'].geometry}
-          material={materials['Bag Main Color']}
+          material={materials['Bag Color 2']}
           castShadow
           receiveShadow
           position={[-11.16, -13.53, 6.01]}

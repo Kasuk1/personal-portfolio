@@ -19,7 +19,7 @@ export const Mouse = ({ nodes, materials }: Common3dObjProps) => {
       <mesh
         name='Rectangle 71'
         geometry={nodes['Rectangle 71'].geometry}
-        material={materials.Rug}
+        material={materials['Bag Color 2']}
         castShadow
         receiveShadow
         position={[0.64, 1.17, 0.07]}
@@ -29,7 +29,7 @@ export const Mouse = ({ nodes, materials }: Common3dObjProps) => {
       <mesh
         name='Rectangle 62'
         geometry={nodes['Rectangle 62'].geometry}
-        material={materials.Rug}
+        material={materials['Bag Color 2']}
         castShadow
         receiveShadow
         position={[2.48, 1.04, 0.07]}
@@ -39,7 +39,7 @@ export const Mouse = ({ nodes, materials }: Common3dObjProps) => {
       <mesh
         name='Cube 25'
         geometry={nodes['Cube 25'].geometry}
-        material={materials.Rug}
+        material={materials['Bag Color 2']}
         castShadow
         receiveShadow
         position={[5.82, 1.23, -0.05]}
