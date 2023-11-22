@@ -5,15 +5,11 @@
   height: 100vh;
   padding-left: 2rem;
   padding-right: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  //gap: 1.5rem;
 
-  &_divider {
-    height: 30rem;
-    width: 28rem;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
 
   &_chunk {
     display: flex;
@@ -37,13 +33,7 @@
 
 @media only screen and (max-width: 768px) {
   .skillSection {
-    flex-direction: column;
-
-    &_divider {
-      width: 100%;
-      height: 35rem;
-    }
-
+    justify-content: flex-start;
     &_chunk {
       display: flex;
       flex-direction: row;
@@ -52,7 +42,8 @@
     }
 
     &_title {
-      display: none;
+      background-color: transparent;
+      flex-basis: 100%;
     }
   }
 }
@@ -60,9 +51,5 @@
 @media only screen and (max-width: 480px) {
   .skillSection {
     padding: 0 1rem;
-    &_divider {
-      width: 100%;
-      height: 20rem;
-    }
   }
 }

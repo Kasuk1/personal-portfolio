@@ -1,18 +1,16 @@
-import { Canvas } from '@react-three/fiber';
 import { motion } from 'framer-motion';
-import { Planet } from 'components';
 import classes from './heroSection.module.scss';
 
 export const HeroSection = () => {
   return (
     <section className={classes.main_hero}>
-      <Canvas
+      {/* <Canvas
         shadows
         camera={{ position: [0, 0, 3], fov: 35 }}
         style={{ position: 'absolute', zIndex: 1 }}
       >
         <Planet />
-      </Canvas>
+      </Canvas> */}
       <header className={classes.main_hero_headers}>
         <motion.p
           className={classes.main_hero_headers_title}
@@ -29,7 +27,7 @@ export const HeroSection = () => {
             },
           }}
         >
-          Hi there, I'm <br />
+          Hola! I'm <br />
           <span>Igor Chinchay</span>
         </motion.p>
         <motion.p
@@ -47,8 +45,8 @@ export const HeroSection = () => {
             },
           }}
         >
-          A <span>Software Engineer</span> that loves frontend, music, games and
-          wealthness.
+          A <span>Software Engineer</span> that loves frontend, 3D, music,
+          videogames and wealthness.
         </motion.p>
         <motion.a
           href='#contact'
@@ -60,9 +58,9 @@ export const HeroSection = () => {
             y: 50,
           }}
           whileHover={{
-            backgroundColor: '#F84E70',
+            backgroundColor: '#d3712f',
             color: '#FAF8FD',
-            transition: { duration: 0.1 },
+            transition: { duration: 0.01 },
           }}
           whileInView={{
             opacity: 1,

@@ -2,12 +2,7 @@
 
 .navbar {
   max-width: 1640px;
-  position: relative;
   padding: 1rem 2rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .nav-list {
@@ -36,15 +31,15 @@
 }
 
 .letter-i {
-  color: #350e56;
+  color: $highlight-span;
 }
 
 .letter-c {
-  color: #813da4;
+  color: $second-black;
 }
 
 .letter-f {
-  color: #b294c1;
+  color: $alternate-color;
 }
 
 @media only screen and (max-width: 1024px) {

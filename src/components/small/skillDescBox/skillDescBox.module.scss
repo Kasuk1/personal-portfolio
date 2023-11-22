@@ -2,6 +2,10 @@
 
 .skillChunk {
   &_tech {
+    background-color: $second-color;
+    padding: 0 0.5rem;
+    border-radius: 20px;
+
     display: flex;
     align-items: center;
     gap: 0.2rem;
@@ -13,6 +17,7 @@
     }
 
     &_name {
+      color: $default-white;
       font-size: 1rem;
       font-weight: 300;
     }
@@ -21,16 +26,14 @@
   &_experience {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    margin-left: auto;
-    text-align: end;
 
     &_date {
       font-size: 0.7rem;
+      font-weight: 600;
     }
 
     &_companyName {
-      color: #e76a9e;
+      color: $alternate-color;
       font-weight: bold;
     }
 

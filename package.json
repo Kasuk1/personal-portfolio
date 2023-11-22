@@ -32,6 +32,8 @@
   "dependencies": {
     "@react-three/drei": "^9.88.11",
     "@react-three/fiber": "^8.15.9",
+    "@splinetool/loader": "^0.9.507",
+    "@splinetool/r3f-spline": "^1.0.2",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.495",
     "@types/three": "^0.158.1",
@@ -42,6 +44,7 @@
     "react-dom": "^18.2.0",
     "react-lazy-load-image-component": "^1.6.0",
     "react-router-dom": "^6.18.0",
+    "react-use": "^17.4.0",
     "three": "^0.158.0",
     "vite-tsconfig-paths": "^4.2.1",
     "web-vitals": "^3.5.0"

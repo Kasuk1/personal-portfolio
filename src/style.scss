@@ -8,18 +8,26 @@ $main-font: 'Roboto', sans-serif;
 $main-color: #0d0a06;
 $second-color: #010918;
 $highlight-background: #02122c;
-$highlight-span: #cea2e4;
+$highlight-span: #d0a540;
 $default-black: #030811;
 $second-black: #484848;
 $default-white: #ffffff;
 $default-gray: #e1e7ec;
-$alternate-color: #d90a94;
+$alternate-color: #d3712f;
 
 //BASIC-CONFIGURATION
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 html {
@@ -30,22 +38,23 @@ html {
 }
 
 body {
-  position: relative;
-  width: 100%;
+  //position: fixed;
+  background-color: #faedd8;
+  /* width: 100%;
   min-height: 100vh;
   background: linear-gradient(
     90deg,
     hsla(0, 0%, 0%, 1) 0%,
     hsla(210, 67%, 1%, 1) 51%,
     hsla(220, 75%, 2%, 1) 100%
-  );
+  ); */
 
   color: $second-color;
 }
 
 #root {
-  max-width: 1640px;
-  margin: 0 auto;
+  //max-width: 1640px;
+  //margin: 0 auto;
 }
 
 ul {
@@ -59,17 +68,6 @@ a {
 ::selection {
   background-color: $highlight-span;
   color: $default-black;
-}
-
-body::-webkit-scrollbar {
-  display: block;
-  background-color: $main-color;
-  width: 5px;
-  overflow: auto;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: $highlight-span;
 }
 
 .container {
@@ -95,8 +93,9 @@ h3 {
 }
 
 p {
-  color: $default-gray;
+  color: $second-color;
   font-size: 0.95rem;
+  font-weight: 400;
   line-height: 25px;
 }
 

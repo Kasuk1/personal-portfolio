@@ -1,10 +1,9 @@
 /* Import BASICS */
 
-/* Import Loadables VIEWS */
+/* Import VIEWS */
 import { Main } from 'views';
 
 /* Import COMPONENTS */
-import { Navbar } from './components';
 
 /* Import STYLES */
 import './style.scss';
@@ -12,7 +11,6 @@ import './style.scss';
 export const App = () => {
   return (
     <>
-      <Navbar />
       <Main />
     </>
   );
