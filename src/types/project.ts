@@ -2,6 +2,7 @@ export type ProjectReferenceType = {
   id: number;
   name: string;
   url: string;
+  logo: 'web' | 'github' | 'figma';
 };
 
 export type ProjectImageType = {
@@ -11,9 +12,9 @@ export type ProjectImageType = {
 };
 
 export type ProjectDataType = {
-  id: number;
+  id: string;
   name: string;
-  description: string;
+  tags: string[];
   technologies: { [key: string]: string[] };
   references: ProjectReferenceType[];
   images?: ProjectImageType[];

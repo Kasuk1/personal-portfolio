@@ -1,30 +1,31 @@
 @import '../../../style.scss';
 
 .skillSection {
+  font-size: 35rem;
   position: relative;
-  height: 100vh;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 0 2rem;
+  height: 27rem;
+  margin-top: 20rem;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
 
   &_chunk {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.25rem;
+    flex-wrap: wrap;
   }
 
-  &_title {
-    font-weight: 500;
-    background-color: $highlight-span;
-    color: $default-black;
-    padding: 0 0.2rem;
-    margin-bottom: 0.5rem;
-    line-height: 1.1;
+  &_description {
+    color: $default-gray;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: end;
+    transform: translateY(100%);
+
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0;
   }
 }
 
@@ -33,23 +34,18 @@
 
 @media only screen and (max-width: 768px) {
   .skillSection {
-    justify-content: flex-start;
-    &_chunk {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      column-gap: 0.7rem;
-    }
-
-    &_title {
-      background-color: transparent;
-      flex-basis: 100%;
-    }
+    font-size: 25rem;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .skillSection {
+    font-size: 8rem;
+    margin-top: 5rem;
     padding: 0 1rem;
+
+    &_description {
+      display: none;
+    }
   }
 }

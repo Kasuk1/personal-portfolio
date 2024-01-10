@@ -1,0 +1,30 @@
+@import '../../../style.scss';
+
+.colofurText {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background: $background-highlight-gradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.8;
+
+  font-family: $title-font;
+  font-size: 100%;
+  font-weight: 700;
+  line-height: 0.9;
+  text-transform: uppercase;
+  user-select: none;
+  z-index: -10;
+}
+
+@media only screen and (max-width: 480px) {
+  .colofurText {
+    position: relative;
+    text-align: center;
+    inline-size: 100%;
+    overflow-wrap: break-word;
+  }
+}

@@ -1,11 +1,10 @@
-/* eslint-disable */
 import { ProjectDataType } from '../types/project';
 
 export const projectsData: ProjectDataType[] = [
   {
-    id: 1,
+    id: 'noise_app',
     name: 'NoiseApp',
-    description: `Web app(Frontend) - Spotify API.`,
+    tags: ['Webapp', 'Frontend', 'API', 'Spotify'],
     technologies: {
       ['Design']: ['Figma'],
       ['Frontend']: [
@@ -25,21 +24,25 @@ export const projectsData: ProjectDataType[] = [
         id: 1,
         name: 'Official Web',
         url: 'https://noise-app.netlify.app/',
+        logo: 'web',
       },
       {
         id: 2,
         name: 'GitHub - Frontend',
         url: 'https://github.com/Kasuk1/personal-noiseapp',
+        logo: 'github',
       },
       {
         id: 3,
         name: 'Figma - Wireframe',
         url: 'https://www.figma.com/file/LUmoAiitPxxeCoy1ZmYgmO/Web---Noise?node-id=2%3A28',
+        logo: 'figma',
       },
       {
         id: 4,
         name: 'Figma - Prototype',
         url: 'https://www.figma.com/file/LUmoAiitPxxeCoy1ZmYgmO/Web---Noise?node-id=2%3A29',
+        logo: 'figma',
       },
     ],
     images: [
@@ -67,9 +70,9 @@ export const projectsData: ProjectDataType[] = [
     status: 'Active',
   },
   {
-    id: 2,
+    id: 'mdc_app',
     name: 'My Dear Character',
-    description: 'Web application(game) - Sockets - MERN.',
+    tags: ['Webapp', 'Fullstack', 'WebSockets', 'MERN'],
     technologies: {
       ['Design']: ['Figma'],
       ['Frontend']: [
@@ -103,16 +106,19 @@ export const projectsData: ProjectDataType[] = [
         id: 1,
         name: 'Official Web',
         url: 'https://mdcharacter.netlify.app/',
+        logo: 'web',
       },
       {
         id: 2,
         name: 'GitHub - Frontend',
         url: 'https://github.com/Kasuk1/personal-mydearcharacter',
+        logo: 'github',
       },
       {
         id: 3,
         name: 'GitHub - Backend',
         url: 'https://github.com/Kasuk1/personal-mydearcharacter-backend',
+        logo: 'github',
       },
     ],
     images: [
@@ -135,9 +141,9 @@ export const projectsData: ProjectDataType[] = [
     status: 'Active',
   },
   {
-    id: 3,
+    id: 'mlf_app',
     name: 'My Little Friend',
-    description: `Web application, MERN stack for veterinaries.`,
+    tags: ['Webapp', 'Fullstack', 'MERN', 'RTK'],
     technologies: {
       ['Design']: ['Figma', 'Photoshop'],
       ['Frontend']: [
@@ -148,7 +154,6 @@ export const projectsData: ProjectDataType[] = [
         'RTK',
         'React-Router-V6',
         'Ant-Design',
-        '',
       ],
       ['Backend']: [
         'Node',
@@ -170,16 +175,19 @@ export const projectsData: ProjectDataType[] = [
         id: 1,
         name: 'Official Web',
         url: 'https://mylittlefriend-top19.netlify.app/',
+        logo: 'web',
       },
       {
         id: 2,
         name: 'GitHub - Frontend',
         url: 'https://github.com/Kasuk1/MyLittleFriend',
+        logo: 'github',
       },
       {
         id: 3,
         name: 'GitHub - Backend',
         url: 'https://github.com/rivaldo-ortega/MyLittleFriend-backend',
+        logo: 'github',
       },
     ],
     images: [

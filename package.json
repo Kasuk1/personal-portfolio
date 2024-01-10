@@ -30,35 +30,26 @@
     ]
   },
   "dependencies": {
-    "@react-three/drei": "^9.88.11",
-    "@react-three/fiber": "^8.15.9",
-    "@splinetool/loader": "^0.9.508",
-    "@splinetool/r3f-spline": "^1.0.2",
     "@splinetool/react-spline": "^2.2.6",
-    "@splinetool/runtime": "^0.9.495",
-    "@types/three": "^0.158.1",
-    "framer-motion": "^10.16.4",
-    "framer-motion-3d": "^10.16.4",
-    "gh-pages": "^6.0.0",
+    "framer-motion": "^10.17.11",
+    "framer-motion-3d": "^10.17.11",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-lazy-load-image-component": "^1.6.0",
-    "react-router-dom": "^6.18.0",
-    "react-use": "^17.4.0",
-    "three": "^0.158.0",
-    "vite-tsconfig-paths": "^4.2.1",
-    "web-vitals": "^3.5.0"
+    "react-router-dom": "^6.21.1",
+    "vite-tsconfig-paths": "^4.2.3",
+    "web-vitals": "^3.5.1"
   },
   "devDependencies": {
-    "@types/node": "^20.8.10",
-    "@types/react": "^18.2.34",
-    "@types/react-dom": "^18.2.14",
-    "@types/react-lazy-load-image-component": "^1.6.2",
+    "@types/node": "^20.10.7",
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
     "@types/react-router-dom": "^5.3.3",
-    "@vitejs/plugin-react": "^4.1.1",
-    "sass": "^1.69.5",
-    "typescript": "^5.2.2",
-    "vite": "^4.5.0",
-    "vite-plugin-html": "^3.2.0"
+    "@vitejs/plugin-react": "^4.2.1",
+    "sass": "^1.69.7",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11",
+    "vite-plugin-html": "^3.2.1",
+    "vite-plugin-svgr": "^4.2.0"
   }
 }

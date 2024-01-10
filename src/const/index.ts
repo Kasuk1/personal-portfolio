@@ -1,2 +1,2 @@
 export * from './framerMotion';
-export * from './general';
+export * from './scenesUrl';

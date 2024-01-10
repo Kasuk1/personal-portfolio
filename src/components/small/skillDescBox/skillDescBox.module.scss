@@ -1,54 +1,26 @@
 @import '../../../style.scss';
 
-.skillChunk {
-  &_tech {
-    background-color: $second-color;
-    padding: 0 0.5rem;
-    border-radius: 20px;
+.skillDescBox {
+  background: rgba($main-color, 0.6);
+  padding: 0.7rem 1.2rem;
 
-    display: flex;
-    align-items: center;
-    gap: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
 
-    &_level {
-      border-radius: 50%;
-      width: 8px;
-      height: 8px;
-    }
-
-    &_name {
-      color: $default-white;
-      font-size: 1rem;
-      font-weight: 300;
-    }
-  }
-
-  &_experience {
-    display: flex;
-    flex-direction: column;
-
-    &_date {
-      font-size: 0.7rem;
-      font-weight: 600;
-    }
-
-    &_companyName {
-      color: $alternate-color;
-      font-weight: bold;
-    }
-
-    &_role {
-      font-size: 1.2rem;
-    }
+  &_name {
+    color: $default-white;
+    font-size: 2rem;
+    font-weight: 300;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .skillChunk {
-    &_experience {
-      &_date {
-        display: none;
-      }
+  .skillDescBox {
+    padding: 0.5rem;
+
+    &_name {
+      font-size: 1.5rem;
     }
   }
 }

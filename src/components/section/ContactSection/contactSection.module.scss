@@ -1,93 +1,77 @@
 @import '../../../style.scss';
 
 .contactSection {
-  height: 100vh;
   position: relative;
-  padding: 2rem;
+  padding: 15rem 2rem;
+  margin-top: 20rem;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+  gap: 2rem;
 
-  &_emailForm {
+  &_title {
+    background: $background-alternate-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: $title-font;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 0.8;
+    text-transform: uppercase;
+    user-select: none;
+  }
+
+  &_logosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+  }
+
+  &_logoItem {
+    background: rgba($default-white, 0.1);
     border-radius: 5px;
+    text-transform: capitalize;
+    opacity: 0.8;
+    width: 8rem;
+    height: 8rem;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-
-  &_title {
-    background-color: $highlight-span;
-    color: #030811;
-    padding: 0 0.2rem;
-  }
-
-  &_emailInput {
-    background-color: $default-white;
-    border: none;
-    color: $default-black;
-    font-family: 'Roboto', sans-serif;
-    padding: 0 0.5rem;
-    width: 25rem;
-    height: 3rem;
-    font-size: 1rem;
-  }
-
-  &_messageInput {
-    background-color: $default-white;
-    border: none;
-    color: $default-black;
-    font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
-    padding: 0.5rem 0.5rem;
-    width: 25rem;
-    min-width: 10rem;
-    height: 8rem;
-    max-height: 15rem;
-  }
-
-  &_submitButton {
-    font-family: 'Roboto', sans-serif;
-    cursor: pointer;
-    border: none;
-
-    font-size: 1.4rem;
-    padding: 0.6rem 2.2rem;
-  }
-
-  &_logosContainer {
-    margin-top: 10rem;
-
-    display: flex;
     align-items: center;
-    gap: 0.8rem;
 
-    & > a {
-      & img {
-        width: 2rem;
-        filter: invert(6%) sepia(66%) saturate(1060%) hue-rotate(176deg)
-          brightness(90%) contrast(110%);
-      }
+    &:hover {
+      background: $background-highlight-gradient;
+      opacity: 1;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contactSection {
+    &_title {
+      font-size: 8rem;
+      text-align: center;
+      inline-size: 100%;
+      overflow-wrap: break-word;
     }
   }
 }
 
 @media only screen and (max-width: 480px) {
   .contactSection {
-    padding: 1rem;
-    justify-content: flex-start;
-    align-items: flex-start;
+    margin-top: 5rem;
+    padding: 0 1rem 2rem 1rem;
 
-    &_emailInput {
-      width: 100%;
+    &_title {
+      font-size: 5rem;
     }
 
-    &_messageInput {
-      width: 100%;
+    &_logosContainer {
+      justify-content: center;
     }
   }
 }

@@ -1,0 +1,53 @@
+@import '../../../style.scss';
+
+.projectBox {
+  background: rgba($default-gray, 0.05);
+  border-radius: 2px;
+  padding: 1rem 1rem;
+  width: 18rem;
+  height: 18rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0.15rem;
+
+  &_info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  &_name {
+    font-size: 1.35rem;
+    font-weight: 500;
+  }
+
+  &_tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+
+    & > span {
+      background-color: rgba($default-gray, 0.2);
+      border-radius: 1px;
+      font-size: 0.8rem;
+      font-weight: 300;
+      line-height: 1.5;
+      padding: 0 0.3rem;
+      opacity: 0.8;
+    }
+  }
+
+  &_references {
+    margin-top: 1.2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &:hover {
+    background: $background-text-gradient;
+  }
+}

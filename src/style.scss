@@ -1,19 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Khand:wght@400;500;600;700&family=Righteous&display=swap');
 
 //VARIABLES
 //FONTS
-$main-font: 'Roboto', sans-serif;
+$title-font: 'Khand', sans-serif;
+$header-font: 'Righteous', sans-serif;
+$secondary-font: 'Inter', sans-serif;
 
 //COLORS
-$main-color: #0d0a06;
-$second-color: #010918;
+$main-color: #000100;
+$second-color: #e9eff8;
 $highlight-background: #02122c;
 $highlight-span: #d0a540;
-$default-black: #030811;
+$default-black: #0d0a06;
 $second-black: #484848;
-$default-white: #ffffff;
-$default-gray: #e1e7ec;
+$default-white: #e9eff8;
+$default-gray: #b8b8b8;
 $alternate-color: #d3712f;
+$background-main-gradient: linear-gradient(
+  90deg,
+  hsla(270, 94%, 25%, 1) 0%,
+  hsla(158, 94%, 49%, 1) 100%
+);
+$background-highlight-gradient: linear-gradient(
+  90deg,
+  hsla(352, 83%, 64%, 1) 0%,
+  hsla(230, 90%, 68%, 1) 100%
+);
+
+$background-alternate-gradient: linear-gradient(
+  90deg,
+  hsla(182, 64%, 53%, 1) 0%,
+  hsla(34, 98%, 50%, 1) 50%,
+  hsla(323, 100%, 47%, 1) 100%
+);
+$background-text-gradient: linear-gradient(
+  90deg,
+  hsla(239, 94%, 14%, 1) 0%,
+  hsla(190, 68%, 50%, 1) 100%
+);
 
 //BASIC-CONFIGURATION
 * {
@@ -31,15 +55,17 @@ body,
 }
 
 html {
+  color: $second-color;
   font-size: 16px;
-  font-family: $main-font;
+  font-family: $secondary-font;
   font-weight: 300;
   scroll-behavior: smooth;
 }
 
 body {
   //position: fixed;
-  background-color: #faedd8;
+  background-color: #000101;
+  //background-color: #faedd8;
   /* width: 100%;
   min-height: 100vh;
   background: linear-gradient(
@@ -63,10 +89,11 @@ ul {
 
 a {
   text-decoration: none;
+  color: $default-white;
 }
 
 ::selection {
-  background-color: $highlight-span;
+  background-color: $second-color;
   color: $default-black;
 }
 
@@ -93,14 +120,11 @@ h3 {
 }
 
 p {
-  color: $second-color;
-  font-size: 0.95rem;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 25px;
 }
 
 .text-secondary {
-  color: $second-color;
 }
 
 .font-weight-200 {

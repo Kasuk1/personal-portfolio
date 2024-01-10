@@ -1,12 +1,10 @@
-import { Suspense, useRef, useState } from 'react';
-import { Canvas } from '@react-three/fiber';
+import { useRef, useState } from 'react';
 import { MotionConfig } from 'framer-motion';
 import { Overlay } from 'views';
-import { Scene as RoomScene } from 'components';
 
 export const Main = () => {
-  const scroll = useRef<number>(0);
-  const [isRoomCavasInDom, setIsRoomCanvasInDom] = useState(false);
+  /* const scroll = useRef<number>(0);
+  const [isRoomCavasInDom, setIsRoomCanvasInDom] = useState(false); */
 
   return (
     <MotionConfig
@@ -18,16 +16,19 @@ export const Main = () => {
         restDelta: 0.0001,
       }}
     >
-      <Canvas id='roomCanvas' shadows flat linear>
-        <Suspense fallback={null}>
+      {/* <Suspense fallback={null}>
+        <Canvas id='roomCanvas' shadows flat linear>
+          <Cube setIsRoomCanvasInDom={setIsRoomCanvasInDom} />
           <RoomScene
             scroll={scroll}
             setIsRoomCanvasInDom={setIsRoomCanvasInDom}
           />
-          {/* <Stats /> */}
-        </Suspense>
-      </Canvas>
-      {isRoomCavasInDom && <Overlay scroll={scroll} />}
+          <Stats />
+        </Canvas>
+      </Suspense> */}
+      {/* {isRoomCavasInDom ? <Overlay scroll={scroll} /> : null} */}
+      {/* {isRoomCavasInDom ? <Overlay /> : null} */}
+      <Overlay />
     </MotionConfig>
   );
 };
