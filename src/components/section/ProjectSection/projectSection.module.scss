@@ -1,76 +1,44 @@
 @import '../../../style.scss';
 
 .projectSection {
-  position: relative;
-  padding: 2rem;
   margin-top: 20rem;
 
   display: flex;
+  flex-direction: column;
   gap: 2.5rem;
 
-  &_info {
-    max-width: 35rem;
-
-    display: flex;
+  @media only screen and (max-width: 768px) {
     flex-direction: column;
   }
 
-  &_title {
-    background: $background-highlight-gradient;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  &_info {
+    display: flex;
+    flex-direction: column;
 
-    font-family: $title-font;
-    font-size: 15rem;
-    font-weight: 700;
-    line-height: 0.9;
+    @media only screen and (max-width: 480px) {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  &_title {
+    font-size: 3rem;
+    font-weight: 600;
     text-transform: uppercase;
-    user-select: none;
   }
 
   &_description {
-    color: $default-gray;
     font-size: 1.2rem;
     font-weight: 300;
+    opacity: 0.7;
   }
 
   &_list {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-  }
 
-  &_scene {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .projectSection {
-    flex-direction: column;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .projectSection {
-    margin-top: 5rem;
-    padding: 0 1rem;
-
-    &_info {
-      max-width: 100%;
-      text-align: center;
-    }
-
-    &_title {
-      font-size: 8rem;
-    }
-
-    &_list {
+    @media only screen and (max-width: 480px) {
       justify-content: center;
     }
   }

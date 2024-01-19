@@ -1,0 +1,13 @@
+.sectionOverlay {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 8rem;
+  position: relative;
+
+  @media only screen and (max-width: 1024px) {
+    padding: 0 4rem;
+  }
+  @media only screen and (max-width: 480px) {
+    padding: 0 1rem;
+  }
+}

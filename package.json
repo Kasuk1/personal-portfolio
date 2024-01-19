@@ -30,21 +30,20 @@
     ]
   },
   "dependencies": {
+    "@gsap/react": "^2.0.2",
     "@splinetool/react-spline": "^2.2.6",
-    "framer-motion": "^10.17.11",
-    "framer-motion-3d": "^10.17.11",
+    "@splinetool/runtime": "^1.0.28",
     "gh-pages": "^6.1.1",
+    "gsap": "^3.12.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.21.1",
     "vite-tsconfig-paths": "^4.2.3",
     "web-vitals": "^3.5.1"
   },
   "devDependencies": {
-    "@types/node": "^20.10.7",
+    "@types/node": "^20.11.0",
     "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.18",
-    "@types/react-router-dom": "^5.3.3",
     "@vitejs/plugin-react": "^4.2.1",
     "sass": "^1.69.7",
     "typescript": "^5.3.3",

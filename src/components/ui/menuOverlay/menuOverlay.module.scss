@@ -1,0 +1,63 @@
+@import '../../../style.scss';
+
+.menuOverlay {
+  width: 100%;
+  position: relative;
+  top: -100%;
+
+  display: none;
+  gap: 15rem;
+
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  &_contactList {
+    text-transform: uppercase;
+    opacity: 0.75;
+    align-self: flex-end;
+
+    @media only screen and (max-width: 1024px) {
+      align-self: flex-start;
+    }
+
+    & > ul {
+      & > li {
+        & > a {
+          font-size: 1rem;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &_menu {
+    display: flex;
+    flex-direction: column;
+
+    & > li {
+      & > a {
+        font-size: 12vw;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: -20px;
+
+        @media only screen and (min-width: 1920px) {
+          font-size: 6vw;
+        }
+
+        @media only screen and (max-width: 1024px) {
+          letter-spacing: -10px;
+          font-size: 10vw;
+        }
+
+        @media only screen and (max-width: 480px) {
+          letter-spacing: -5px;
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}

@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Khand:wght@400;500;600;700&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Khand:wght@400;500;600;700&family=Mukta:wght@600;700;800&family=Oswald:wght@400;500;600;700&family=Righteous&display=swap');
 
 //VARIABLES
 //FONTS
 $title-font: 'Khand', sans-serif;
-$header-font: 'Righteous', sans-serif;
+$header-font: 'Oswald', sans-serif;
 $secondary-font: 'Inter', sans-serif;
+$alternative-font: 'Hind Vadodara', sans-serif;
 
 //COLORS
 $main-color: #000100;
-$second-color: #e9eff8;
+$second-color: rgb(212, 252, 252);
 $highlight-background: #02122c;
 $highlight-span: #d0a540;
 $default-black: #0d0a06;
@@ -30,7 +31,7 @@ $background-highlight-gradient: linear-gradient(
 $background-alternate-gradient: linear-gradient(
   90deg,
   hsla(182, 64%, 53%, 1) 0%,
-  hsla(34, 98%, 50%, 1) 50%,
+  hsla(34, 98%, 50%, 1) 65%,
   hsla(323, 100%, 47%, 1) 100%
 );
 $background-text-gradient: linear-gradient(
@@ -51,15 +52,24 @@ body,
 #root {
   height: 100%;
   width: 100%;
-  overflow: hidden;
 }
 
 html {
-  color: $second-color;
+  color: $default-white;
   font-size: 16px;
   font-family: $secondary-font;
   font-weight: 300;
   scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    background-color: $main-color;
+    width: 5px;
+    overflow: auto;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $second-color;
+  }
 }
 
 body {
@@ -122,47 +132,27 @@ h3 {
 p {
   font-weight: 200;
   line-height: 25px;
+  color: $default-white;
 }
 
-.text-secondary {
+.small_title {
+  font-weight: 400;
+  font-size: 0.7rem;
+  text-transform: uppercase;
 }
 
-.font-weight-200 {
-  font-weight: 200;
+.common_text {
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.85rem;
 }
 
-.font-weight-500 {
-  font-weight: 500;
-}
-
-.flex {
+.view_flex {
   display: flex;
-}
-
-.column {
   flex-direction: column;
-}
+  gap: 10rem;
 
-.space-between {
-  justify-content: space-between;
-}
-
-.align-item-start {
-  align-items: flex-start;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.gap-5 {
-  gap: 5px;
-}
-
-.gap-10 {
-  gap: 10px;
+  @media only screen and (max-width: 480px) {
+    gap: 5rem;
+  }
 }

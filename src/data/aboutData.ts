@@ -11,7 +11,7 @@ export const aboutData: AboutDataType = {
     fields: [
       {
         entityName: 'Sharpminds',
-        date: 'Mar 2022 - Present',
+        date: 'Mar 2022 - Mar 2023',
         position: 'React Developer',
         functions: [
           'Migrate code functionality to React environment following current practices and functionalities.',

@@ -1,7 +1,6 @@
 import { ProjectDataType } from 'types/project';
 import { ReferenceItem } from '../referenceItem/ReferenceItem';
 import classes from './projectBox.module.scss';
-import { useEffect } from 'react';
 
 export const ProjectBox = ({
   id: projectId,

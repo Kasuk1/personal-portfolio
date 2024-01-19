@@ -1,2 +1,3 @@
-export * from './main/Main';
-export { Overlay } from './overlay/Overlay';
+export { Main } from './main/Main';
+export { About } from './about/About';
+export { Contact } from './contact/Contact';

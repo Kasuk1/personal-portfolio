@@ -1,119 +1,82 @@
 @import '../../../style.scss';
 
 .main_hero {
-  padding: 10rem 2rem;
-  //width: 100%;
-  max-width: 1640px;
-  height: 80rem;
-  position: relative;
-  overflow: hidden;
+  padding-bottom: 2rem;
+  margin-top: 12rem;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 
-  &_scene {
-    position: absolute;
-    top: 0;
+  @media only screen and (max-width: 1024px) {
+    margin-top: 10rem;
+  }
+  @media only screen and (max-width: 480px) {
+    margin-top: 8rem;
   }
 
-  &_headers {
+  &_header {
+    background: $background-alternate-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: $header-font;
+    font-size: 7.5vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    user-select: none;
+    height: calc(100vh - 12rem);
+
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
 
-    text-align: center;
-    z-index: 2;
+    @media only screen and (min-width: 1920px) {
+      font-size: 4vw;
+    }
+    @media only screen and (max-width: 480px) {
+      font-size: 3.5rem;
+      gap: 4rem;
+    }
 
-    &_title {
-      background: $background-main-gradient;
-
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-family: $header-font;
-      font-size: 6.5rem;
-      font-weight: 700;
+    &_left {
       line-height: 1;
-      letter-spacing: -1px;
-      text-transform: uppercase;
-      user-select: none;
-
-      & span {
-        background: $background-alternate-gradient;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
     }
-
-    &_description {
-      color: $default-gray;
-      font-size: 1.2rem;
-      font-weight: 300;
-    }
-
-    &_button {
-      background-color: $default-gray;
-      cursor: pointer;
-      border: none;
-
-      font-size: 1.4rem;
-      font-weight: 400;
-      padding: 0.6rem 2.2rem;
+    &_right {
+      line-height: 1;
+      text-align: end;
     }
   }
-
   &_arrowLogo {
+    margin-top: auto;
+    align-self: center;
     z-index: 10;
   }
-}
 
-@media only screen and (max-width: 1024px) {
-  .main_hero {
-    &_headers {
-      &_title {
-        font-size: 4rem;
-        width: 90%;
-      }
+  &_description {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    opacity: 0;
 
-      &_description {
-        font-size: 1.2rem;
-        width: 80%;
-      }
-    }
-  }
-}
+    & p {
+      color: rgba($second-color, 0.7);
+      font-family: $alternative-font;
+      font-size: 2.4rem;
+      font-weight: 500;
+      line-height: 1.4;
+      letter-spacing: -0.8px;
+      z-index: 10;
 
-@media only screen and (max-width: 768px) {
-  .main_hero {
-    &_headers {
-      &_description {
+      @media only screen and (max-width: 768px) {
         font-size: 1.4rem;
         letter-spacing: 0;
         line-height: 1.4;
       }
-    }
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .main_hero {
-    align-items: flex-start;
-    padding: 0 1rem;
-    height: 40rem;
-
-    &_headers {
-      margin-right: 0;
-      padding-top: 4rem;
-
-      &_title {
-        font-size: 3rem;
-      }
-      &_description {
+      @media only screen and (max-width: 480px) {
         font-size: 1.1rem;
+      }
+
+      & a {
+        color: inherit;
       }
     }
   }

@@ -24,6 +24,7 @@
     "noEmit": true,
     "baseUrl": "./src"
   },
+  "include": ["src", "src/**/*.ts", "react-app-env.d.ts", "declaration.d.ts"],
   "exclude": [
     "node_modules",
     "build",
@@ -31,6 +32,5 @@
     "acceptance-tests",
     "src/setupTests.ts"
   ],
-  "types": ["vite/client"],
-  "include": ["src", "src/**/*.ts", "react-app-env.d.ts", "declaration.d.ts"]
+  "types": ["vite/client"]
 }

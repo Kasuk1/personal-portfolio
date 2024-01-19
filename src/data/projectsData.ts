@@ -22,7 +22,7 @@ export const projectsData: ProjectDataType[] = [
     references: [
       {
         id: 1,
-        name: 'Official Web',
+        name: 'Live',
         url: 'https://noise-app.netlify.app/',
         logo: 'web',
       },
@@ -104,7 +104,7 @@ export const projectsData: ProjectDataType[] = [
     references: [
       {
         id: 1,
-        name: 'Official Web',
+        name: 'Live',
         url: 'https://mdcharacter.netlify.app/',
         logo: 'web',
       },
@@ -173,7 +173,7 @@ export const projectsData: ProjectDataType[] = [
     references: [
       {
         id: 1,
-        name: 'Official Web',
+        name: 'Live',
         url: 'https://mylittlefriend-top19.netlify.app/',
         logo: 'web',
       },

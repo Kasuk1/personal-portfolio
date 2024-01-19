@@ -1,0 +1,69 @@
+@import '../../../style.scss';
+
+.footerSection {
+  padding: 4rem 8rem;
+  margin-top: 20rem;
+
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (max-width: 1024px) {
+    padding: 4rem;
+  }
+  @media only screen and (max-width: 480px) {
+    margin-top: 10rem;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  &_phrase {
+    font-size: 0.9rem;
+    opacity: 0.7;
+
+    @media only screen and (max-width: 480px) {
+      text-align: center;
+    }
+  }
+
+  &_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media only screen and (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    &_social {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    &_social_item {
+      border-radius: 5px;
+      text-transform: capitalize;
+      opacity: 0.8;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_copyright {
+      text-align: end;
+
+      @media only screen and (max-width: 480px) {
+        text-align: center;
+      }
+
+      & > p:nth-child(1) {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+  }
+}

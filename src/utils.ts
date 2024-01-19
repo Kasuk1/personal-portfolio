@@ -16,3 +16,5 @@ export const findAndUpdateDividerSkillSelector = (
     }
   });
 };
+
+export const isMobileOrTablet = () => window.screen.width <= 768;

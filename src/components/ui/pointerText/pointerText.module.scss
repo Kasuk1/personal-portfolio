@@ -1,0 +1,19 @@
+@import '../../../style.scss';
+
+.pointerText {
+  background-color: $default-white;
+  border-radius: 25px;
+  border: 1px solid $main-color;
+  color: $main-color;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+  padding: 0.2rem 0.8rem;
+  z-index: 10;
+  position: fixed;
+
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}

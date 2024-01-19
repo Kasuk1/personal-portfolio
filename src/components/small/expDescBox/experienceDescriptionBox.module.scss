@@ -1,0 +1,45 @@
+@import '../../../style.scss';
+
+.expDescBox {
+  border-radius: 5px;
+  padding: 0.9rem 0.8rem;
+  padding-bottom: 0.3rem;
+  width: 25rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+
+  @media only screen and (max-width: 480px) {
+    width: 20rem;
+  }
+
+  &_company {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  &_role {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  & > svg {
+    align-self: flex-end;
+  }
+
+  &:hover {
+    background: $background-text-gradient;
+    opacity: 0.9;
+  }
+}
+
+.opened {
+  background: $background-text-gradient;
+  opacity: 1;
+}
+.closed {
+  background: rgba($default-gray, 0.05);
+  opacity: 0.8;
+}

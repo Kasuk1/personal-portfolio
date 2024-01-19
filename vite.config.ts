@@ -16,4 +16,5 @@ export default defineConfig({
   resolve: {
     alias: [{ find: '@', replacement: resolve(__dirname, './src') }],
   },
+  optimizeDeps: {},
 });

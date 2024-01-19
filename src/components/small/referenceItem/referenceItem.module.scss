@@ -1,13 +1,4 @@
 @import '../../../style.scss';
 
 .referenceItem {
-  &_besideMouseText {
-    background-color: $default-white;
-    border-radius: 1px;
-    color: $main-color;
-    font-weight: 600;
-    padding: 0 0.2rem;
-    z-index: 10;
-    position: fixed;
-  }
 }
