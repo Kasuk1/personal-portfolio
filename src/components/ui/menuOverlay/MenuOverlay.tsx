@@ -2,6 +2,7 @@ import { MouseEvent, useContext } from 'react';
 import { contactData } from 'data/contactData';
 import { Link, RouterContext } from 'routes';
 import { UIContext } from 'context';
+import { MAIN_ROUTE } from 'const';
 import classes from './menuOverlay.module.scss';
 
 export const MenuOverlay = () => {
@@ -31,13 +32,19 @@ export const MenuOverlay = () => {
 
       <ul className={classes.menuOverlay_menu}>
         <li>
-          <Link to='/about' onClick={(e) => handleClick('/about', e)}>
+          <Link
+            to={`${MAIN_ROUTE}/about`}
+            onClick={(e) => handleClick(`${MAIN_ROUTE}/about`, e)}
+          >
             About
           </Link>
         </li>
 
         <li>
-          <Link to='/contact' onClick={(e) => handleClick('/contact', e)}>
+          <Link
+            to={`${MAIN_ROUTE}/contact`}
+            onClick={(e) => handleClick(`${MAIN_ROUTE}/contact`, e)}
+          >
             Contact
           </Link>
         </li>

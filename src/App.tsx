@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react';
 import { Route, Fallback, Router } from 'routes';
 import { About, Contact, Main } from 'views';
 import { FooterSection, Navbar, ViewOverlay } from 'components';
-import './style.scss';
 import { UIProvider } from 'context';
+import { MAIN_ROUTE } from 'const';
+import './style.scss';
 
 export const App = () => {
   const [domLoaded, setDomLoaded] = useState<boolean>(false);
@@ -37,13 +38,13 @@ export const App = () => {
           <Navbar />
 
           <main>
-            <Route path='/'>
+            <Route path={`${MAIN_ROUTE}/`}>
               <Main />
             </Route>
-            <Route path='/about'>
+            <Route path={`${MAIN_ROUTE}/about`}>
               <About />
             </Route>
-            <Route path='/contact'>
+            <Route path={`${MAIN_ROUTE}/contact`}>
               <Contact />
             </Route>
             <Fallback>

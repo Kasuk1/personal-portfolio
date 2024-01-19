@@ -2,6 +2,7 @@ import { MouseEvent, useContext } from 'react';
 import gsap from 'gsap';
 import { UIContext } from 'context';
 import { Link, RouterContext } from 'routes';
+import { MAIN_ROUTE } from 'const';
 import classes from './logo.module.scss';
 
 type Props = {
@@ -33,8 +34,8 @@ export const Logo = ({ contextSafe }: Props) => {
 
   return (
     <Link
-      to='/'
-      onClick={(e) => handleLogoClick('/', e)}
+      to={`${MAIN_ROUTE}/`}
+      onClick={(e) => handleLogoClick(`${MAIN_ROUTE}/`, e)}
       className={classes.logo}
       onMouseEnter={() => onLogoMouseOver()}
       onMouseLeave={() => onLogoMouseOut()}
