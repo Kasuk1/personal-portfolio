@@ -27,10 +27,10 @@ export const useHeroGSAPAnimation = ({ containerRef }: Props) => {
 
       gsap.to(`.${classes.main_hero_description}`, {
         scrollTrigger: {
-          trigger: `.${classes.main_hero_header}`,
+          trigger: `.${classes.main_hero_description}`,
           pin: true,
-          start: 'bottom center',
-          end: 'bottom center',
+          start: '200 center',
+          end: '200 center',
           scrub: 1,
           markers: false,
           id: 'hero_desc',
