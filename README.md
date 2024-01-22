@@ -1,4 +1,4 @@
-# Personal protfolio
+# Personal portfolio
 
 ## General description
 
