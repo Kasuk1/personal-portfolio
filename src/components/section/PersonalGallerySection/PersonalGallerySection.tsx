@@ -1,7 +1,7 @@
-import personal1 from '/assets/images/personal1.jpg';
-import personal2 from '/assets/images/personal2.jpg';
-import personal3 from '/assets/images/personal3.jpg';
-import personal4 from '/assets/images/personal4.jpg';
+import personal1 from '/assets/images/personal1.webp';
+import personal2 from '/assets/images/personal2.webp';
+import personal3 from '/assets/images/personal3.webp';
+import personal4 from '/assets/images/personal4.webp';
 
 import classes from './personalGallerySection.module.scss';
 

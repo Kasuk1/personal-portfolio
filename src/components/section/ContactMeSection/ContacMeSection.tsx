@@ -1,9 +1,9 @@
 import { PointerText } from 'components/ui';
 import { contactData } from 'data/contactData';
 import { ArrowUpRightFromLogo } from 'components/svg';
-import personal1 from '/assets/images/personal1.jpg';
-import personal2 from '/assets/images/personal2.jpg';
-import personal3 from '/assets/images/personal3.jpg';
+import personal1 from '/assets/images/personal1.webp';
+import personal2 from '/assets/images/personal2.webp';
+import personal3 from '/assets/images/personal3.webp';
 import classes from './contactMeSection.module.scss';
 
 const socialContact = contactData.filter(({ id }) => id !== 'data_mail');

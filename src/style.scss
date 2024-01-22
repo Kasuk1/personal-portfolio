@@ -1,9 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Khand:wght@400;500;600;700&family=Mukta:wght@600;700;800&family=Oswald:wght@400;500;600;700&family=Righteous&display=swap');
-
 //VARIABLES
 //FONTS
-$title-font: 'Khand', sans-serif;
-$header-font: 'Oswald', sans-serif;
 $secondary-font: 'Inter', sans-serif;
 $alternative-font: 'Hind Vadodara', sans-serif;
 
@@ -11,12 +7,9 @@ $alternative-font: 'Hind Vadodara', sans-serif;
 $main-color: #000100;
 $second-color: rgb(212, 252, 252);
 $highlight-background: #02122c;
-$highlight-span: #d0a540;
 $default-black: #0d0a06;
-$second-black: #484848;
 $default-white: #e9eff8;
 $default-gray: #b8b8b8;
-$alternate-color: #d3712f;
 $background-main-gradient: linear-gradient(
   90deg,
   hsla(270, 94%, 25%, 1) 0%,
@@ -30,7 +23,7 @@ $background-highlight-gradient: linear-gradient(
 
 $background-alternate-gradient: linear-gradient(
   90deg,
-  hsla(182, 64%, 53%, 1) 0%,
+  hsl(182, 64%, 53%) 0%,
   hsla(34, 98%, 50%, 1) 65%,
   hsla(323, 100%, 47%, 1) 100%
 );
@@ -50,8 +43,8 @@ $background-text-gradient: linear-gradient(
 html,
 body,
 #root {
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 
 html {
@@ -60,11 +53,11 @@ html {
   font-family: $secondary-font;
   font-weight: 300;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 
   &::-webkit-scrollbar {
     background-color: $main-color;
-    width: 5px;
-    overflow: auto;
+    width: 8px;
   }
 
   &::-webkit-scrollbar-thumb {
@@ -73,24 +66,7 @@ html {
 }
 
 body {
-  //position: fixed;
   background-color: #000101;
-  //background-color: #faedd8;
-  /* width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(
-    90deg,
-    hsla(0, 0%, 0%, 1) 0%,
-    hsla(210, 67%, 1%, 1) 51%,
-    hsla(220, 75%, 2%, 1) 100%
-  ); */
-
-  color: $second-color;
-}
-
-#root {
-  //max-width: 1640px;
-  //margin: 0 auto;
 }
 
 ul {
@@ -108,7 +84,6 @@ a {
 }
 
 .container {
-  //min-height: calc(100vh - 220px);
   position: relative;
   display: flex;
   flex-direction: column;

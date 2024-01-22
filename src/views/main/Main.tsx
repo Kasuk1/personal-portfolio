@@ -9,7 +9,12 @@ import {
 
 export const Main = () => {
   return (
-    <SectionOverlay>
+    <SectionOverlay
+      ceo={{
+        title: 'Portfolio Igor Chinchay - Software Engineer',
+        description: `Presentation view where we show Igor Chinchay's skills, experience and projects.`,
+      }}
+    >
       <HeroSection />
       <SkillSection />
       <ExperienceSection />

@@ -1,4 +1,3 @@
-import { ReactNode, useEffect, useState } from 'react';
 import { FigmaLogo, GithubLogo, LinkLogo } from 'components/svg';
 import { ProjectReferenceType } from 'types/project';
 import { PointerText } from 'components';
@@ -18,12 +17,12 @@ export const ReferenceItem = ({
   const Logo = logoRefProject[logo];
 
   return (
-    <PointerText hiddenText={name}>
-      <li className={classes.referenceItem}>
-        <a href={url} target='_blank'>
+    <li className={classes.referenceItem}>
+      <PointerText hiddenText={name}>
+        <a href={url} target='_blank' aria-label={`${name} Project's Link`}>
           <Logo fill='white' width={28} height={28} />
         </a>
-      </li>
-    </PointerText>
+      </PointerText>
+    </li>
   );
 };

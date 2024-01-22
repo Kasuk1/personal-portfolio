@@ -7,13 +7,18 @@ export const FooterSection = () => {
     <SectionOverlay id='contact_section' extraClassName={classes.footerSection}>
       <footer className={classes.footerSection_footer}>
         <div className={classes.footerSection_footer_social}>
-          {contactData.map(({ id, url, logo: Logo }) => {
+          {contactData.map(({ id, url, logo: Logo, name }) => {
             return (
               <div
                 key={id}
                 className={classes.footerSection_footer_social_item}
               >
-                <a href={url} target='_blank' rel='noreferrer'>
+                <a
+                  href={url}
+                  target='_blank'
+                  rel='noreferrer'
+                  aria-label={`Igor's ${name} link`}
+                >
                   <Logo width={25} height={25} fill='white' />
                 </a>
               </div>

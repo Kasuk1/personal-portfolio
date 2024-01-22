@@ -4,51 +4,45 @@
   padding-bottom: 2rem;
   margin-top: 12rem;
 
-  display: flex;
-  flex-direction: column;
-
   @media only screen and (max-width: 1024px) {
     margin-top: 10rem;
   }
-  @media only screen and (max-width: 480px) {
-    margin-top: 8rem;
-  }
 
   &_header {
-    background: $background-alternate-gradient;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: $header-font;
-    font-size: 7.5vw;
-    font-weight: bold;
+    font-family: $alternative-font;
+    font-size: 8rem;
+    letter-spacing: -10px;
     text-transform: uppercase;
-    user-select: none;
-    height: calc(100vh - 12rem);
-
     display: flex;
     flex-direction: column;
 
-    @media only screen and (min-width: 1920px) {
-      font-size: 4vw;
+    @media only screen and (max-width: 1024px) {
+      font-size: 6.5rem;
     }
     @media only screen and (max-width: 480px) {
-      font-size: 3.5rem;
-      gap: 4rem;
+      font-size: 4.5rem;
+      letter-spacing: -5px;
+    }
+
+    & > p {
+      color: $second-color;
+      font-weight: 800;
+      line-height: 1;
     }
 
     &_left {
-      line-height: 1;
+      align-self: flex-start;
     }
     &_right {
-      line-height: 1;
       text-align: end;
+      align-self: flex-end;
+
+      @media only screen and (max-width: 480px) {
+        margin-top: 2rem;
+        text-align: start;
+        align-self: flex-start;
+      }
     }
-  }
-  &_arrowLogo {
-    margin-top: auto;
-    align-self: center;
-    z-index: 10;
   }
 
   &_description {

@@ -1,5 +1,5 @@
-import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import classes from './heroSection.module.scss';
 
@@ -12,14 +12,6 @@ type Props = {
 export const useHeroGSAPAnimation = ({ containerRef }: Props) => {
   useGSAP(
     () => {
-      gsap.to(`.${classes.main_hero_arrowLogo}`, {
-        ease: 'none',
-        yoyo: true,
-        duration: 0.7,
-        y: 20,
-        repeat: -1,
-      });
-
       gsap.to(`.${classes.main_hero_header}`, {
         scrollTrigger: {
           trigger: `.${classes.main_hero_header}`,

@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { SquareArrowUpRight } from 'components/svg';
 import { MenuOverlay } from '../menuOverlay/MenuOverlay';
 import { Logo, SquareButton, StatusCirle } from 'components';
@@ -15,7 +15,7 @@ export const Navbar = () => {
   return (
     <div className={classes.wrapper}>
       <nav id='navbar' className={classes.navbar}>
-        <Logo contextSafe={contextSafe} />
+        <Logo />
         <ul className={classes.navbar_list}>
           <li>
             <StatusCirle />

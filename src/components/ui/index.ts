@@ -1,3 +1,4 @@
+export * from './ceo/CEO';
 export * from './header';
 export * from './navbar/Navbar';
 export * from './menuOverlay/MenuOverlay';

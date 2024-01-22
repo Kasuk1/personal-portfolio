@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { ArrowSignDownLogo, ArrowUpRightFromLogo } from 'components/svg';
+import { ArrowUpRightFromLogo } from 'components/svg';
 import { useHeroGSAPAnimation } from './useHeroGSAPAnimation';
 import { PointerText } from 'components/ui';
 import classes from './heroSection.module.scss';
@@ -23,9 +23,6 @@ export const HeroSection = () => {
             <br />
             Chinchay
           </p>
-          <span className={classes.main_hero_arrowLogo}>
-            <ArrowSignDownLogo fill='white' width={35} height={35} />
-          </span>
         </header>
 
         <div className={classes.main_hero_description}>
