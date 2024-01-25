@@ -24,21 +24,8 @@ export const useHeroGSAPAnimation = ({ containerRef }: Props) => {
         },
         opacity: 0,
       });
-
-      gsap.to(`.${classes.main_hero_description}`, {
-        scrollTrigger: {
-          trigger: `.${classes.main_hero_description}`,
-          pin: true,
-          start: '200 center',
-          end: '200 center',
-          scrub: 1,
-          markers: false,
-          id: 'hero_desc',
-        },
-        opacity: 1,
-      });
     },
-    { scope: containerRef ? containerRef : '#hero_section' }
+    { scope: containerRef }
   );
 
   return;

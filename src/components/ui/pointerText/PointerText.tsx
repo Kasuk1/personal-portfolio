@@ -18,7 +18,7 @@ export const PointerText = ({
   uppercase = false,
 }: Props) => {
   const [showText, setShowText] = useState<boolean>(false);
-  const mousePosition = useMousePosition();
+  const mousePosition = useMousePosition({ activate: showText });
 
   return (
     <>
